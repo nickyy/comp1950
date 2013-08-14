@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters - Meet our Team</title>
+  <meta name="description" content="The WebBusters are eager to talk to you about your future site.">
+  
+<!-- Start include: search -->  
+<!--#include file="inc/top.inc" -->
+<!-- End include: search -->
+       
+      <img class="webbusterlogo2" src="images/webbusterlogo2.png" alt="webbusterlogo">
+      <!--<hgroup id="prototitle"> -->
+        <h1>WebBusters</h1>
+        <h2>Team Profiles</h2>
+      <!--</hgroup> -->
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="index.shtml">Home</a></li>
+        <li><a href="protosite.shtml">Protosite</a></li>
+        <li><a href="wireframes.shtml">Wireframes</a></li>
+        <li><a href="rationale.shtml">Rationale</a></li>
+        <li><a href="contactus.shtml">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <aside class="sidenav">
+        <nav>
+          <ul>
+            <li><a href="projectdesc.shtml">Project Description</a></li>
+            <li class="active"><a href="teamprofiles.shtml">Team Profiles</a></li>
+          </ul>
+        </nav>
+      </aside> <!--sidenav -->
+      <section id="main">
+        <section>
+	  <h2>Team Profile</h2>
+	    <div class="profile">
+	      <h3>Dino Buljubasic</h3>
+		<figure><img src="images/dino.jpg" alt="Dino Buljubasic"/></figure>
+		<p>Dino finished his Bachelor or Computer Systems Technology program at BCIT and is currently working as software developer.  He has no experience in web development and has taken COMP1950 on his own to get some basic understanding of web development.  Although the class is completely different from his work, he find it very informative and a  great experience.</p>
+	    </div>
+	    <div class="profile">
+	      <h3>Hannah Han</h3>
+		<figure><img src="images/hannah.jpg" alt="Hannah Han"/></figure>
+		<p>Hannah is a graphic designer in design advertising at Vanchosun Media. Many people have so many ideas that they are merely dreamers; however, she can make them happy and smile, with her great skills and design creativity, by making their dreams come true. Hannah wants to complement her printing skills with design skills in web development. She has already successfully completed COMP1850 and is currently taking COMP1950 (Intermediate Web Design & Development). She hopes to become a web designer soon.</p>
+	    </div>
+	    <div class="profile">    
+	      <h3>Nick Pearson</h3>
+		<figure><img src="images/nick.jpg" alt="Nick Pearson"/></figure>
+		<p>Nick has a background in software development mixed with web development. In September 2010 he took the Pragmatic Studios Ruby on Rails course, sparking the merge of his two passions. Nick is currently the webmaster for three sites, of which his primary site is doubling traffic year over year for three years running.</p>
+	    </div>
+	    <div class="profile">	    
+	      <h3>Nicky Yuen</h3>
+		<figure><img src="images/nicky.jpg" alt="Nicky Yuen"/></figure>
+		<p>Nicky currently works as a consultant at BC Hydro in the Smart Meter program. He is currently taking web development courses so that he can someday make a career transition to a web developer. His past web development experience includes helping to develop an online app store for a major international telecommunications company. So far he is thoroughly enjoying web development.</p>
+	    </div>
+	 </section>
+      </section>  <!--main-->
+    </section> <!--content-->
+    
+<!-- Start include: team_footer -->
+<!--#include file="inc/team_footer.inc" -->
+<!-- End include: team_footer -->  	
+	
+  </div> <!--container-->
+</body>
+</html>

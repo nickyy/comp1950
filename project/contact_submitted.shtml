@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters - Contact Submitted</title>
+  <meta name="description" content="Thank you for contacting the WebBusters. We look forward to doing business with you!">
+
+<!-- Start include: top -->  
+<!--#include file="inc/top.inc" -->
+<!-- End include: top -->
+       
+	<a href="index.shtml"><img class="webbusterlogo2" src="images/webbusterlogo2.png" alt="webbusterlogo"></a>
+      <!--<hgroup id="prototitle"> -->
+        <h1>Feedback Form Submitted</h1>
+      <!--</hgroup> -->
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="index.shtml">Home</a></li>
+        <li><a href="protosite.shtml">Protosite</a></li>
+        <li><a href="wireframes.shtml">Wireframes</a></li>
+        <li><a href="rationale.shtml">Rationale</a></li>
+        <li class="active"><a href="contactus.shtml">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+		<!-- Sidenav removed 
+		<aside class="sidenav">
+			<nav>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</nav>
+		</aside>
+		-->
+	<section id="main">
+        
+		<h2>Thanks For Contacting Us!</h2>
+		<div id="contact_thanks">
+			<p>We appreciate your feedback and comments. We'll try to address them and get back to you as needed. In the meantime, please <a href="index.shtml">continue browsing our site</a>.</p>
+		</div>
+		
+      </section>  <!--main-->
+    </section> <!--content-->
+    
+<!-- Start include: team_footer -->
+<!--#include file="inc/team_footer.inc" -->
+<!-- End include: team_footer -->  
+	
+  </div> <!--container-->
+</body>
+</html>

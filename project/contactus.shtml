@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters - Contact Information Page</title>
+  <meta name="description" content="Contact us for more information about our web design and development services.">
+  <script type="text/javascript">
+  </script>
+
+<!-- Start include: top -->  
+<!--#include file="inc/top.inc" -->
+<!-- End include: top -->
+       
+	<a href="index.shtml"><img class="webbusterlogo2" src="images/webbusterlogo2.png" alt="webbusterlogo"></a>
+      <!--<hgroup id="prototitle"> -->
+        <h1>Contact Us</h1>
+      <!--</hgroup> -->
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="index.shtml">Home</a></li>
+        <li><a href="protosite.shtml">Protosite</a></li>
+        <li><a href="wireframes.shtml">Wireframes</a></li>
+        <li><a href="rationale.shtml">Rationale</a></li>
+        <li class="active"><a href="contactus.shtml">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+		<!-- Sidenav removed 
+		<aside class="sidenav">
+			<nav>
+				<ul>
+					<li></li>
+					<li></li>
+				</ul>
+			</nav>
+		</aside>
+		-->
+	<section id="main">
+        
+		<h2>Send Us Your Feedback</h2>
+		<section id="contact_summary">
+			<p>For questions or comments about our site, fill out our comment form below.</p>
+			<p id="disclaimer">All personal information you provide is kept private and confidential.</p>
+		</section>
+
+<!-- ******************************* Contact Form ****************************** -->			
+		<section id="contact_form">
+			<p><span class="required_field">* Required Field</span><p>
+		
+			<form name="contactForm" method="post" action="formmail.php" onsubmit="return validateForm()">
+				<!-- hidden fields used by formmail.php -->
+				<input type="hidden" name="recipient" id="recipient" value="nyuen4@my.bcit.ca"><!-- CHANGE EMAIL -->
+				<input type="hidden" name="subject" id="subject" value="Info">
+				<input type="hidden" name="redirect" id="redirect" value="contact_submitted.shtml">
+				<input type="hidden" name="sort" id="sort" value="name,email,phone,contact_time,comment">
+			
+				<div class="contact_form_field">
+					<label for="name" class="labelCol">Name<span class="required_field">*</span></label>
+					<input type="text" name="name" id="name" required="required">
+				</div>
+				
+				<div class="contact_form_field">
+					<label for="email" class="labelCol">Email<span class="required_field">*</span></label>
+					<input type="email" name="email" id="email" required="required">
+				</div>
+				
+				<div class="contact_form_field">
+					<label for="comment" class="labelCol">Comment</label>
+					<textarea name="comment" id="comment"></textarea>
+				</div>
+				
+				<div id="contact_form_submit">
+					<input type="submit" name="submit" id="submit" value="Submit Form">
+					<input type="reset" name="reset" id="reset" value="Clear Form">
+				</div>
+			</form>
+		</section>
+<!-- ******************************* Contact Form ****************************** -->
+	</section>  <!--main-->
+	</section> <!--content-->
+	
+<!-- Start include: team_footer -->
+<!--#include file="inc/team_footer.inc" -->
+<!-- End include: team_footer -->     
+
+	</div> <!--container-->
+</body>
+</html>

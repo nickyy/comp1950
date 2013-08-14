@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters - Project Rationale</title>
+  <meta name="description" content="Project Rationale page is an example of what we will present to you for your approval before we start any work on your future site.">
+  
+<!-- Start include: search -->  
+<!--#include file="inc/top.inc" -->
+<!-- End include: search -->
+       
+      <a href="index.shtml"><img class="webbusterlogo2" src="images/webbusterlogo2.png" alt="webbusterlogo"></a>
+      <!--<hgroup id="prototitle"> -->
+        <h1>Rationale</h1>
+        <h2>Protosite - Rationale</h2>
+      <!--</hgroup> -->
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="index.shtml">Home</a></li>
+        <li><a href="protosite.shtml">Protosite</a></li>
+        <li><a href="wireframes.shtml">Wireframes</a></li>
+        <li class="active"><a href="rationale.shtml">Rationale</a></li>
+        <li><a href="contactus.shtml">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <aside class="sidenav">
+        <nav>
+          <ul>
+            <li><a href="projectdesc.shtml">Project Description</a></li>
+            <li><a href="teamprofiles.shtml">Team Profiles</a></li>
+          </ul>
+        </nav>
+      </aside> <!--sidenav -->
+		<section id="main">
+			<h2 id="top">Main Principles</h2>
+			<p>The client’s site is a site built around content, almost exclusively text, to which users will be required to:</p>
+			<ul>
+				<li>Absorb technical information</li>
+				<li>Have on-going ease of recalling information, even as content increases</li>
+			</ul>
+			<p>To support this, our two main principles driving the design is ease of navigation and contextual legibility.</p>
+			<p>We decided to go with a fluid layout with right column fixed-width and left column dynamically resizable. This would allow for responsive resizing of the pages and one column to be used for contextual links.</p>
+			
+			<h2>Layout<span class="bookmark"><a href="#top">Top</a></span></h2>
+			<h3>Navigation</h3>
+				<p>The client’s site built around content, almost exclusively text, through which users will be required to access pertinent parts on an on-going basis. We have designed multiple ways users can efficiently reach the content they need.</p>
+				<p>Across the top of each page lies the main navigation bar. This leads the users to the main sections of the site and is consistent across all pages. In contrast, the right hand side navigation column changes to context specific links based on the page currently on. Most frequently this is the list of lecture notes by week and topic.</p>
+				<p>Additionally, each page has a search bar, functionality provided by Google Search, to allow users fast and efficient navigation to specific desired content. The placement of the search bar, in the upper right corner, allows it to be easily located, with the placement consistent with current industry practices.</p>
+				<p>We offer a <a href="sitemap.shtml">sitemap</a> to allow users an overview of the site structure. This gives a holistic view of the entire site. The link to this page can be found in the footer of every page.</p>
+				<p>Finally, in the event a user ends up at a page that doesn’t exist, we have a styled <a href="404.html">404 page</a> with several options to resolve the issue.</p>
+				
+			<h3>Mobile Layout</h3>
+				<p>In the client’s answer to the questionnaire, they expressed a desire for a handheld friendly format for their site. To accomplish this, we added a media-query to differentiate user-agents below 420px and shift to a single column layout. This optimises the viewable space available to users who visit from smaller devices.</p>
+				<p>Various other elements are adjusted to optimise the user experience:</p>
+				<ul>
+					<li>White background behind content for legibility</li>
+					<li>Sidebar nav background colour is changed to differentiate it from the main nav bar</li>
+					<li>Header logos are removed</li>
+					<li>Header font sizes are slightly reduced</li>
+					<li>Search button is changed to a search icon</li>
+					<li>Search field is enlarged</li>
+					<li>Navigational links are centred and the active link areas are expanded (ie. click near the links rather directly on the link)</li>
+					<li>Form fields are adjusted, with form buttons enlarged (assuming a touch device)</li>
+				</ul>
+
+			<h2>Design<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p>All pages were designed with semantics and search engine optimisation in mind. Relevant HTML5 tags, including &lt;header&gt;, &lt;hgroup&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;aside&gt;, and others, were used as much as possible. In this regard we attempt to achieve a website that well qualifies itself as part of the Semantic Web and providing Universal Access.</p>
+				<p>The style for the main content of each page was designed for ease of readability and visual separation of the various components. For example, appropriate spacing was implemented to allow the user to easily identify the various hierarchical levels within each sub-section (bulleted lists, and bulleted sub-lists), and also between different content sections of the same page.</p>
+				<p>To ensure cross-browser compatibility, we started by zeroing out margin and padding on most elements, giving us a fresh starting point. We then built up the design of the site to W3C CSS3 standards while maintaining graceful backwards compatibility. A prominent example of this would be our use of rounded corners. Modern browsers will display as intended, while more historic browsers will display box corners. Mild aesthetic change that does not impact the ability of the site to perform.</p>
+				<p>A few of the pages had some unique elements we’d like to further elaborate on.</p>
+
+			<h3>WebBusters Home</h3>
+				<p>The <a href="index.shtml">Team homepage</a> introduces the Project Description and Team member's profiles with roles for the project. This page is designed with Protosite, Wireframes, Rationale and Contact Us pages. The Description page identifies project goals, and site development resources utilized for content, layout, and design ideas.</p>
+
+			<h3>The Protosite</h3>
+				<p>The <a href="protosite.shtml">Protosite</a>, which was designed for our client Alistair Calder, proposes changes to the existing COMP 1950 (Intermediate Web Design and Development) website. This site is designed for students to be able to see at a glance all of the information about the course such as introduction, course outline, and each week’s lecture theme.</p>
+
+			<h3>Contact Us</h3>
+				<p>The <a href="contactus.shtml">Contact Us page</a> was designed with a form, rather than individual email addresses. The use of a form allows page visitors to contact the team without the team having to expose their email addresses.</p>
+
+			<h3>The Tumblr Blog</h3>
+				<p>The <a href="http://bcitwebbusters.tumblr.com">Tumblr Blog micro-site</a> was designed to duplicate exactly the look and feel of the class site. All of the main navigation links lead back to the client’s pages, building a seamless experience for the users. Sample text and images were pre-loaded in order to showcase how Client’s content would look.</p>
+
+			<h3>Wireframes</h3>
+				<p>The <a href="wireframes.shtml">Wireframes page</a> provides various adaptations of the wireframes, namely in DOC, HTML, and PNG formats. This allows for downloading or viewing of the wireframes in whatever media the user desires. The PNG images are the default view to allow quick and easy access to view the wireframes.</p>
+
+			<h3>Sitemap</h3>
+				<p>The <a href="sitemap.shtml">Sitemap page</a> stands out from the rest of the site, with no layout applied to it. This gives the content (the site map) the most amount of real estate possible given the user’s browser-agent. Every page is logically organized and linked.</p>
+
+
+		</section>  <!--main-->
+	</section> <!--content-->
+    
+<!-- Start include: team_footer -->
+<!--#include file="inc/team_footer.inc" -->
+<!-- End include: team_footer -->	
+	
+  </div> <!--container-->
+</body>
+</html>

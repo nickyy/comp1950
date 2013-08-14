@@ -1,0 +1,103 @@
+/* WebBusters media-query.css */
+
+@media screen and (max-width: 480px) {
+	header h1 {
+		font-size: 24px;
+		/*margin: 20px 5px 60px 5px;*/
+		padding-left: 0;
+		margin: 15px 0 0 0;
+	}
+	
+	header h2 {
+		font-size: 20px;
+		/*margin: 20px 5px 60px 5px;*/
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+	
+	.logo {
+		/*width: 120px;
+		height: 120px;*/
+		display: none;
+	}
+	
+	#main {
+		clear: both;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+/************************* Search Field ************************/	
+	#search {
+		margin-top: 0;
+	}
+	
+	#search input[type=submit] {
+		background-image: url('../images/search_small.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		border: none;
+		color: transparent;
+		cursor: pointer;
+		height: 30px;
+		width: 30px;
+	}
+	
+	#search input[type=text] {
+		/*height: 20px; */
+	}
+	
+/************************* .mainnav ************************/
+  .mainnav{
+    clear: both;
+    /*height: 70px;*/
+    border-radius: 0px 0px 0px 0px;
+  }
+  	
+	.mainnav ul {
+		text-align: center;
+		float: none;
+		font-size: 100%;
+	}
+	
+	.mainnav ul li {
+		padding: 0 5px;
+	}
+		
+	.footernav ul {
+		margin: 10px auto;
+	}
+	
+  #content {
+		width: 100%;
+		border-radius: 10px 10px 10px 10px;
+		background-color: #E1E8F6;  
+	}
+	
+/************************* .sidenav ************************/
+	.sidenav {
+		clear: both;
+		width: 100%;
+		/*float: right;*/
+		background-color: #318EEA; 
+		margin: 0px;
+		padding: 10px; 
+	}
+	
+	.sidenav a {
+		display: inline-block;
+		width: 300px;
+		padding: 5px 0;
+	}
+	
+	.sidenav ul {
+		list-style-type: none;
+		display: block;
+		margin-left: 0px;
+	}
+	
+	.sidenav ul li {
+		/*padding: 5px 0;*/
+		text-align: center;
+	}
+}
+ 

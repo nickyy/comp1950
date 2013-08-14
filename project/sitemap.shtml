@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- WebBusters Sitemap -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Web Busters Sitemap</title>
+	<link rel="stylesheet" type="text/css" media="screen, print" href="css/sitemap.css" /> 
+</head>
+
+<body>
+	<section class="sitemap">
+		
+		<h1>WebBusters</h1>
+		<h2>Project COMP1950 - Site Map</h2>
+	
+		<ul id="utilityNav">
+			<li><a href="http://bcitwebbusters.tumblr.com">Blog</a></li>
+			<li><a href="#">Sitemap</a></li>
+		</ul>
+
+		<ul id="primaryNav" class="col5">
+			<li id="home"><a href="../">Start</a></li>
+          
+			<li><a href="index.shtml">Home</a>
+				<ul>
+					<li><a href="protosite.shtml">Protosite</a></li>
+					<li><a href="wireframes.shtml">Wireframes</a></li>
+					<li><a href="rationale.shtml">Rationale</a></li>
+					<li><a href="contactus.shtml">Contact Us</a></li>
+					<li><a href="projectdesc.shtml">Project Description</a></li>
+					<li><a href="teamprofiles.shtml">Team Profiles</a></li>
+				</ul>
+			</li>
+		
+			<li><a href="protosite.shtml">Protosite</a>
+				<ul>
+					<li><a href="outline.shtml">Course Outline</a></li>
+					<li><a href="http://bcitwebbusters.tumblr.com">Blog</a></li>
+					<li><a href="#">Lectures</a>
+						<ul>
+							<li><a href="#">Week 1 Introduction</a></li>
+							<li><a href="#">Week 2 Tools and Standards</a></li>
+							<li><a href="week3.shtml">Week 3 HTML5 and SEO</a></li>
+							<li><a href="#">Week 4 CSS Concepts</a></li>
+							<li><a href="#">Week 5 Advanced CSS</a></li>
+							<li><a href="#">Week 6 SSI</a></li>
+							<li><a href="#">Week 7 Template Development</a></li>
+							<li><a href="#">Week 8 Midterm</a></li>
+							<li><a href="#">Week 9 Methodology</a></li>
+							<li><a href="#">Week 10 Behavior</a></li>
+							<li><a href="#">Week 11 Site Construction</a></li>
+							<li><a href="#">Week 12 Final Exam</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		
+			<li><a href="wireframes.shtml">Wireframes</a>
+				<ul>
+					<li><a href="images/homepage_wireframe.png">Homepage Wireframe</a>
+						<ul>
+							<li><a href="wireframes/homepage_wireframe.html">Homepage HTML Format</a></li>
+							<li><a href="wireframes/homepage_wireframe.docx">Homepage Word Format</a></li>
+						</ul>
+					</li>
+					<li><a href="images/protosite_wireframe.png">Protosite Wireframe</a>
+						<ul>
+							<li><a href="wireframes/protosite_wireframe.html">Protosite HTML Format</a></li>
+							<li><a href="wireframes/protosite_wireframe.docx">Protosite Word Format</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			
+ 			<li><a href="rationale.shtml">Rationale</a>
+				<ul>
+					<!--<li><a href="blahblah">some link</a></li>-->
+				</ul>
+			</li>
+      	
+			<li><a href="contactus.shtml">Contact Us</a>
+				<ul>
+          <li><a href="contact_submitted.shtml">Contact Submitted Page</a></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+<!-- Start include: team_footer -->
+<!--#include file="inc/team_footer.inc" -->
+<!-- End include: team_footer -->  
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters</title>
+  
+	<!-- Google analytics -->
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-37799767-8']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	<!-- end Google analytics -->
+
+  <meta name="description" content="We provide web solutions, website maintenance, web design and development. Contact us - we are located in Burnaby, BC, Canada.">
+  
+<!-- Start include: top -->  
+<!--#include file="inc/top.inc" -->
+<!-- End include: top -->
+	   
+	<a href="index.shtml"><img class="webbusterlogo2" src="images/webbusterlogo2.png" alt="webbusterlogo"></a>
+		<h1>The WebBusters</h1>
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="protosite.shtml">Protosite</a></li>
+        <li><a href="wireframes.shtml">Wireframes</a></li>
+        <li><a href="rationale.shtml">Rationale</a></li>
+        <li><a href="contactus.shtml">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <aside class="sidenav">
+        <nav>
+          <ul>
+            <li><a href="projectdesc.shtml">Project Description</a></li>
+            <li><a href="teamprofiles.shtml">Team Profiles</a></li>
+          </ul>
+        </nav>
+      </aside> <!--sidenav -->
+      <!-- ******************************* Main Content ************************************* -->
+      <section id="main">
+    		<section class="content_section">
+				<h2 id="top">Team WebBusters</h2>
+				<p>Chair: Dino Buljubasic</p>
+				<p>Members: Dino Buljubasic, Hannah Han, Nick Pearson, Nicky Yuen</p>
+    		</section>
+    		<section class="content_section">
+				<h2>Welcome To The Client Site Of The WebBusters<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p>Team WebBusters constructed a Protosite which provides our client, Mr. Alistair Calder, with proposed changes to the existing BCIT COMP 1950 website.</p>
+				<p>All team members worked collaboratively to improve the website for our client, such as providing input on the creative design layout, and making updates and modifications to various pages and stylesheets.</p>
+    		</section>
+			
+    		<section class="content_section">
+				<h2>Team Contributions<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<h3>Dino Buljubasic - <em>Chair, Development Layout</em></h3>
+				<ul>
+					<li>liaised with client</li>
+					<li>handcoding of HTML and CSS for client site</li>
+					<li>handcoding of HTML and CSS for WebBusters site</li>
+					<li>developed the master site plan for the website</li>
+					<li>developed print CSS and media-query CSS</li>
+					<li>developed the 404 page, including CSS</li>
+					<li>implemented and coded search functionality</li>
+					<li>developed Project Description page</li>
+					<li>provided administrative support</li>
+				</ul>
+				
+				<h3>Hannah Han - <em>Graphics, Colours, Design Layout</em></h3>
+				<ul>
+					<li>designed the Homepage and Protosite wireframes</li>
+					<li>designed the project layout</li>
+					<li>modified CSS design templates</li>
+					<li>developed home page and protosite pages</li>
+					<li>designed layout images, team logo, and researched and implemented colour themes</li>
+					<li>developed Course Outline page</li>
+				</ul>
+				
+				<h3>Nick Pearson - <em>Content Administrator and Development Layout</em></h3>
+				<ul>
+					<li>assembled Rationale and Team Profile pages</li>
+					<li>developed Tumblr blog page</li>
+					<li>provided administrative support</li>
+				</ul>
+				
+				<h3>Nicky Yuen - <em>Content Administrator and Development Layout</em></h3>
+				<ul>
+					<li>ported DOC wireframes to HTML</li>
+					<li>developed Wireframes, ContactUs pages</li>
+					<li>developed and modified content for most pages</li>
+					<li>developed CSS layout for main content sections</li>
+					<li>modified media-query and print CSSs</li>
+					<li>provided administrative support</li>
+					<li>implemented Google Analytics</li>
+					<li>implemented SSIs</li>
+				</ul>
+    		</section>
+		</section>  <!--main-->
+    </section> <!--content-->
+	
+<!-- Start include: team_footer -->
+<!--#include file="inc/team_footer.inc" -->
+<!-- End include: team_footer -->  
+
+  </div> <!--container-->
+</body>
+</html>

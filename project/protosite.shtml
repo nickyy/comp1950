@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters - Site Redesign</title>
+  <meta name="description" content="This is our site redesign for the BCIT COMP1950 course.">
+  
+<!-- Start include: protosite_top -->  
+<!--#include file="inc/protosite_top.inc" -->
+<!-- End include: protosite_top -->
+       
+      <a href="http://bcit.ca"><img class="logo" src="images/bcitlogo.jpg" alt="bcit logo"></a>
+      <!--<hgroup id="prototitle"> -->
+        <h1>BCIT COMP 1950</h1>
+        <h2>Intermediate Web Design & Development</h2>
+      <!--</hgroup> -->
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li class="active"><a href="protosite.shtml">COMP1950 Home</a></li>
+        <li><a href="outline.shtml">Course Outline</a></li>
+        <li><a href="http://bcitwebbusters.tumblr.com">Blog</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <aside class="sidenav">
+        <nav>
+          <ul>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Tools and Standards</a></li>
+            <li class="active"><a href="week3.shtml">HTML5 and SEO</a></li>
+            <li><a href="#">CSS Concepts</a></li>
+            <li><a href="#">Advanced CSS</a></li>
+            <li><a href="#">SSI</a></li>
+            <li><a href="#">Template Development</a></li>
+            <li><a href="#">Midterm</a></li>
+            <li><a href="#">Methodology</a></li>
+            <li><a href="#">Behavior</a></li>
+            <li><a href="#">Site Construction</a></li>
+            <li><a href="#">Final Exam</a></li>
+          </ul>
+        </nav>
+      </aside> <!--sidenav -->
+      <!-- ******************************* Main Content ************************************* -->
+      <section id="main">
+			<section class="content_section">
+				<p id="top">COMP 1950 continues fundamental principles and techniques for
+				designing and developing effective web sites. <a href="http://www.bcit.ca/study/courses/comp1950">Get more details</a>.</p>
+
+				<p>Check the <a href="http://www.bcit.ca/study/courses/comp1950">course
+				catalogue at BCIT</a> to see when this course is running next.</p>
+    		</section>
+
+    		<section class="content_section">
+				<h2>Winter 2013 - welcome!</h2>
+				<p>the agenda for week 1 is the following:</p>
+				<ul>
+					<li>about this course (outline, administrivia, assignments, etc)</li>
+					<li>introductions (me, you)</li>
+					<li>web space (thenet.ca)</li>
+					<li>some expectations &amp; reminders</li>
+					<li>today's assignment</li>
+				</ul>
+				<p></p>
+    		</section>
+			
+    		<section class="content_section">	   
+				<h2>about this course<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p><strong>Official</strong> details about the who, what, where and how are located in the <a href="http://www.bcit.ca/study/courses/comp1950">course info</a> section</p>
+				<p>Some more information you might like to know:</p>
+					<ul>
+					<li>More theory than in 1850</li>
+					<li>Still a fair amount of practical experience</li>
+					<li>Hands on coding and working in teams</li>
+					<li>Real-life methods taken from developers</li>
+					<li>Class and homework exercises
+						<ul>
+							<li>Assignments (various): 20%</li>
+							<li>Quizzes (2): 20%</li>
+							<li>Project: 30%</li>
+							<li>Final Exam: 30%</li>
+						</ul>
+				</li>
+				</ul>
+
+				<h3>Assignments</h3>
+				<ul>
+					<li>Generally given during the lab portion, due the following week</li>
+					<li>Linked from your COMP 1950 page (more on that later)</li>
+				</ul>
+
+				<h3>Quizzes &amp; final exam</h3>
+
+				<p>All quizzes will feature <em>at least</em> one, and <em>possibly</em> all of the following question types:</p>
+				<ul>
+					<li>fill-in-the-blanks</li>
+					<li>short answer</li>
+					<li>matching</li>
+					<li>code correction</li>
+					<li>code writing</li>
+				</ul>
+    		</section>
+
+    		<section class="content_section">	   
+				<h2>expectations &amp; reminders<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p>This course is about Web Development.  This means you should conduct yourself as Web Developers!</p>
+				<p>What does this mean? It means you should understand the following:</p>
+
+
+				<p><strong>FTP</strong></p>
+				<p>If you don't understand FTP (File Transfer Protocol) right now, that's ok. After week 2 - don't ask me. This is a <strong>required</strong> skill</p>
+				<p><strong>File/Folder Names</strong></p>
+				<p>While it is technically possible, my recommendation is that you do NOT use capital letters, and I <strong>require</strong> that you do NOT use spaces in your file or folder names. Special Characters (those characters over the numbers on your keyboard) just won't work.</p>
+				<p><strong>Web Space</strong></p>
+				<p>The student web space is: <strong>students.thenet.ca/(student_name)</strong><br>
+				Notice that there is <strong>no www</strong> at the front</p>
+				<p><strong>Upkeep</strong></p>
+				<p>Each week, you should have your course web space (we'll set up the course web site later) up to date with assignments, exercises, etc.</p>
+				<p><strong>Navigation</strong></p>
+				<p>Please try to make things as easy to find as possible<p>  	
+    		</section>	
+		
+    		<section class="content_section">
+				<h2>Other subjects? Tailor the course!<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<ul>
+					<li>What would you <strong>like</strong> to learn about?</li>
+					<li>What are you most interested in learning?</li>
+					<li>What skills would you like to acquire?</li>
+					<li>Are there subjects not covered here?</li>
+				</ul>
+    		</section>
+		
+    		<section class="content_section">
+				<h2>Let's get started!<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p>Let's go onto <a href="#">week one</a></p>
+    		</section>
+		</section><!--main-->
+		
+	</section><!--content-->
+	
+<!-- Start include: team_footer -->
+<!--#include file="inc/team_footer.inc" -->
+<!-- End include: team_footer -->    
+
+  </div><!--container-->
+</body>
+</html>

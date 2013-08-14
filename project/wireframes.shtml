@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters - Wireframes Page</title>
+  <meta name="description" content="Creating wireframes is one of initial stages of web site development and design.">
+ 
+<!-- Start include: top -->
+<!--#include file="inc/top.inc" -->
+<!-- End include: top -->
+       
+		<a href="index.shtml"><img class="webbusterlogo2" src="images/webbusterlogo2.png" alt="webbusterlogo"></a>
+      <!--<hgroup id="prototitle"> -->
+        <h1>Wireframes</h1>
+        <h2>Protosite - Wireframes</h2>
+      <!--</hgroup> -->
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="index.shtml">Home</a></li>
+        <li><a href="protosite.shtml">Protosite</a></li>
+        <li class="active"><a href="wireframes.shtml">Wireframes</a></li>
+        <li><a href="rationale.shtml">Rationale</a></li>
+        <li><a href="contactus.shtml">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <aside class="sidenav">
+        <nav>
+			<div id="wireframes_style">
+				<ul>
+					<li><a href="#homepage">Homepage Wireframe</a>
+						<ul>
+							<li><a href="wireframes/homepage_wireframe.html">HTML Format</a></li>
+							<li><a href="wireframes/homepage_wireframe.docx">Word Format</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#protosite">Protosite Wireframe</a>
+						<ul>
+							<li><a href="wireframes/protosite_wireframe.html">HTML Format</a></li>
+							<li><a href="wireframes/protosite_wireframe.docx">Word Format</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+      </aside> <!--sidenav -->
+		<section id="main">
+			<section id="wireframes">
+				<h2 id="homepage">Homepage Wireframe</h2>
+				<img src="images/homepage_wireframe.png" alt="Homepage wireframe">
+				<h2 id="protosite">Protosite Wireframe</h2>
+				<img src="images/protosite_wireframe.png" alt="Protosite wireframe">
+			</section>
+		</section>  <!--main-->
+    </section> <!--content-->
+
+<!-- Start include: team_footer -->
+<!--#include file="inc/team_footer.inc" -->
+<!-- End include: team_footer -->
+   
+  </div> <!--container-->
+</body>
+</html>

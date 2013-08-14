@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters - Sample Site, BCIT Course Outline</title>
+  <meta name="description" content="Take a look at our BCIT COMP 1950 course outline.">
+  
+<!-- Start include: protosite_top -->  
+<!--#include file="inc/protosite_top.inc" -->
+<!-- End include: protosite_top -->
+       
+      <a href="http://bcit.ca"><img class="logo" src="images/bcitlogo.jpg" alt="bcit logo"></a>
+      <!--<hgroup id="prototitle"> -->
+        <h1>Course Outline</h1>
+        <h2>COMP 1950 - Intermediate Web Design &amp; Development</h2>
+      <!--</hgroup> -->
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="protosite.shtml">COMP1950 Home</a></li>
+        <li class="active"><a href="outline.shtml">Course Outline</a></li>
+        <li><a href="http://bcitwebbusters.tumblr.com">Blog</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <aside class="sidenav">
+		<nav>
+          <ul>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Tools and Standards</a></li>
+            <li class="active"><a href="week3.shtml">HTML5 and SEO</a></li>
+            <li><a href="#">CSS Concepts</a></li>
+            <li><a href="#">Advanced CSS</a></li>
+            <li><a href="#">SSI</a></li>
+            <li><a href="#">Template Development</a></li>
+            <li><a href="#">Midterm</a></li>
+            <li><a href="#">Methodology</a></li>
+            <li><a href="#">Behavior</a></li>
+            <li><a href="#">Site Construction</a></li>
+            <li><a href="#">Final Exam</a></li>
+          </ul>
+        </nav>
+      </aside> <!--sidenav -->
+		<section id="main">
+			<section class="content_section">
+			<h2 id="top">Outline</h2>
+			<p>Here is the current Course Outline (by week):<p>
+				<ul>
+					<li><strong>Week 1</strong>
+						<ul>
+							<li>Course Introduction: (this week!)</li>
+							<li>Why are you here</li>
+							<li>What you will learn</li>
+							<li>Student Survey</li>
+							<li>Assignment 1: Course homepage</li>
+						</ul>
+					</li>
+					
+					<li><strong>Week 2</strong>
+						<ul>
+							<li>Web Development tools</li>
+							<li>Standards in Web development</li>
+							<li>Assignment 2: Using tools & standards</li>
+						</ul>	
+					</li>	
+					
+					<li><strong>Week 3</strong>
+						<ul>					
+							<li>XHTML1, XHTML 2, HTML 4, HTML 5</li>
+							<li>History and current developments</li>
+							<li>What is the best development language?</li>
+							<li>Assignment 3: Working with different MLs</li>
+						</ul>	
+					</li>
+					
+					<li><strong>Week 4</strong>
+						<ul>			
+							<li>Quiz 1: Markup</li>
+							<li>Review of CSS</li>
+							<li>Beyond text formatting</li>
+							<li>Assignment 4: Using different stylesheets</li>
+						</ul>	
+					</li>	
+					
+					<li><strong>Week 5</strong>
+						<ul>				
+							<li>Advanced CSS</li>
+							<li>Layout and positioning</li>
+							<li>Assignment 5: Troubleshooting CSS, Positioning Exercises</li>
+						</ul>
+					</li>	
+					
+					<li><strong>Week 6</strong>
+						<ul>			
+							<li>Understanding Server Side Includes</li>
+							<li>Beyond SSIs: Delivering dynamic information</li>
+							<li>Introduction to template development</li>
+							<li>Assignment 6: Template</li>
+						</ul>
+					</li>	
+					
+					<li><strong>Week 7</strong>
+						<ul>			
+							<li>Midterm</li>
+							<li>More Template Development</li>
+							<li>Used in Blogs, wikis, user-driven sites, communities</li>
+							<li>Assignment 7: Template II</li>
+						</ul>
+					</li>		
+					
+					<li><strong>Week 8</strong>
+						<ul>			
+							<li>Development Methodology</li> 
+							<li>Requirements, Design, Production, Launch, Maintenance</li> 
+							<li>Project outlined</li> 
+							<li>Assignment 8: Methodology Notes</li> 
+						</ul>
+					</li>
+					
+					<li><strong>Week 9</strong>
+						<ul>				
+							<li>Behaviour</li> 
+							<li>Adding interactivity</li> 
+							<li>JavaScript Libraries and Frameworks</li> 
+							<li>Assignment 9: Javascript exercises</li> 
+						</ul>
+					</li>
+					
+					<li><strong>Week 10</strong>
+						<ul>				
+							<li>Site Construction</li>
+							<li>Bringing it all together</li>
+							<li>Source/Revision Control using GIT</li>
+							<li>Assignment 10: Completed site</li>
+						</ul>
+					</li>
+					
+					<li><strong>Week 11</strong>
+						<ul>				
+							<li>Project Work</li>
+						</ul>	
+					</li>	
+					
+					<li><strong>Week 12</strong>
+						<ul>			
+							<li>Final Examination</li>
+						</ul>
+					</li>
+				</ul>
+			</section> <!-- end content section -->
+			
+			
+			<section class="content_section">
+			<h2>Other subjects? Tailor the course!<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<ul>
+					<li>What would you <strong>like</strong> to learn about?</li>
+					<li>What are you most interested in learning?</li>
+					<li>What skills would you like to acquire?</li>
+					<li>Are there subjects not covered here?</li>
+					<li>Brief introduction to myBCIT and a course survey</li>
+				</ul>
+			</section>	
+			
+			<section class="content_section">
+				<h2>introductions<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p>	<strong>All About Alistair Calder</strong>
+				<ul>
+					<li>Web Developer since 1995</li>
+					<li>Lead web developer for:
+						<ul>
+							<li>Top Producer Systems</li>
+							<li>Multiactive</li>
+							<li>One Atmosphere (my own design firm)</li>
+						</ul>
+					</li>
+					<li><strong>Currently:</strong> Technical lead on student portal, myBCIT</li>
+					<li>Broad knowledge set focussed mainly on web technologies</li>
+				</ul>
+			</section>
+			
+			<section class="content_section">
+				<h2>trivia<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<ul>
+					<li>Worked as:
+						<ul>
+							<li>Real Estate Agent</li>
+							<li>Waiter</li>
+							<li>Car Parts Stacker</li>
+							<li>Corporate Trainer</li>
+							<li>Played in a band for 3 years</li>
+							<li>Software Technical Support</li>
+							<li>Muffin Tin Greaser</li>
+						</ul>
+					</li>
+					<li>Locked myself on the roof of the Rogers Cantel building up at Metrotown by accident.  Had to call a friend to come up and let me back in the building.</li>
+					<li>Live with a Nova Scotia Duck Tolling Retriever: <a href="http://www.alistair.com/collection/finnegan/2005_07/">Finnegan</a></li>
+				</ul>
+			</section>
+
+			<section class="content_section">
+			<h2>Introductions: Who Are You?<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p>Pair up with your neighbour and find out from them:</p>
+				<ul>
+					<li>Name</li>
+					<li>Occupation</li>
+					<li>Web Development Experience</li>
+					<li>Why COMP 1950?</li>
+					<li>What do you want to get out of the course?</li>
+					<li>Little-known trivia</li>
+				</ul>
+				<p>After 5 minutes, you will introduce your classmate.</p>
+			</section>
+
+			<section class="content_section">
+				<h2>web space<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p>Each student will get personal webspace.  This may be different than in the past, as this space is exclusively yours, with your own username and password.</p>
+				<p>This is also not a continuation of your COMP1850 site (if you had one).  This site is primarily for you to house your exercises, assignments, group work and more.  Make it a site that is usable and functional.</p>
+				<p><strong>TheNet Setup</strong></p>
+				<ul>
+					<li>You will create your account in the system one by one</li>
+					<li>Be prepared to enter your:<ul><li>directory name</li>
+					<li>username</li>
+					<li>password</li></ul></li>
+					<li><strong>TIP</strong>: Use your BCIT ID and Password (used for logging into lab computers) to make it easier</li>
+					<li>You will enter your information to create account</li>
+					<li>The account is created immediately</li>
+					<li>Your URL will be: <strong>http://students.thenet.ca/{name}</strong></li>
+				</ul>
+			</section>
+
+			<section class="content_section">
+			<h2>FTP into your Account<span class="bookmark"><a href="#top">Top</a></span></h2>
+				<p>You can use any FTP program you are comfortable with. There is most likely one installed in the labs (it changes from term to term) but you can download and install any one you want.</p>
+				<p>If you aren't knowledgeable with any FTP programs yet, just let me know!</p>
+				<p>Here is the relevant information you will need to know:</p>
+				<ul>
+					<li>Host / IP / URL: <strong>www.thenet.ca</strong></li>
+					<li>Username: <strong>{the username you chose}@thenet.ca</strong></li>
+					<li>Password: <strong>{the password you entered}</strong></li>
+				</ul>
+			</section>
+			
+			<section class="content_section">
+			<h2>assignment<span class="bookmark"><a href="#top">Top</a></span></h2>
+			<p>Create your course web site:</p>
+				<ul>
+					<li>Check out the example page created by a past student: <a href="http://past.thenet.ca/lori/">Lori's Example</a></li>
+					<li>Specifically, what I would like to see:
+						<ul>
+							<li>On your homepage:
+								<ul>
+									<li>Include some information about yourself (such as from your introduction today) including a photo</li>
+								</ul>
+							</li>
+							<li>For week one:
+								<ul>
+									<li>A brief overview of your skill level, web development work you have done so far (if any), links to favourite sites</li>
+									<li>A list of tools, plug-ins, applications or IDEs that you use for web development, including links to web pages of these tools.</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>Use your understanding of HTML and CSS to the limit of your knowledge, but ensure that it is usable, presentable and coherent</li>
+					<li>This site will be used for the rest of the course, edited each week</li>
+					<li>If we do an exercise in class or if you are assigned something for homework, please make sure you indicate that.  Link to exercises and assignments from the appropriate week.  <em>Don't make me have to search for your homework.</em></li>
+					<li>There needs to be a link from the <strong>myBCIT Members</strong> page to your Student Homepage</li>
+				</ul>
+			</section>
+
+		</section>  <!--main-->
+		</section> <!--content-->
+			
+<!-- Start include: protosite_footer -->
+<!--#include file="inc/protosite_footer.inc" -->
+<!-- End include: protosite_footer -->  
+
+	</div> <!--container-->
+</body>
+</html>

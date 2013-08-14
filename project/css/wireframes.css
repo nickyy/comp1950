@@ -1,0 +1,122 @@
+* {
+	font-family: arial, helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 80%;
+	margin: auto;
+	margin-top: 30px;
+	background-color: white;
+}
+
+p.subject {
+	font-style: italic;
+	color: red;
+	float: left;
+	font-weight: bold;
+}
+
+h2#subheader {
+	text-align: center;
+	padding-bottom: 15px;
+}
+/********************* HEADER **********************/
+header {
+	border: 1px solid black;
+}
+
+header h1 {
+	text-align: center;
+}
+
+p.description {
+	clear: both;
+}
+
+.clearfloat {
+	clear: both;
+}
+/********************* SEARCH **********************/
+#search {
+	float: right;
+	padding: 10px;
+}
+
+/********************* CONTAINER **********************/
+#container {
+	border: 1px solid black;
+	border-bottom: none;
+	border-top: none;
+}
+
+
+/********************* PRIMARY NAV **********************/
+#primary_nav {
+	border-bottom: 1px solid black;
+	padding-bottom: 15px;
+}
+
+#primary_nav_links {
+	text-align: right;
+}
+
+#primary_nav_links p {
+	display: inline-block;
+	padding: 0 15px;
+	color: blue;
+}
+
+/********************* SECONDARY NAV **********************/
+#secondary_nav {
+	float: left;
+	width: 25%;
+	min-width: 200px;
+	border: 1px solid black;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+}
+
+#secondary_nav_links {
+	color: blue;
+}
+
+#secondary_nav_links ul {
+	list-style-type: none;
+}
+
+#secondary_nav_links li {
+	padding: 10px;
+}
+
+#secondary_nav, #main {
+	height: 450px;
+}
+/********************* MAIN CONTENT **********************/
+#main {
+	margin-left: 25%;
+	border-right: 1px solid solid;
+}
+
+#main_content {
+	padding: 30px;
+}
+/********************* FOOTER **********************/
+footer {
+	clear: both;
+	border: 1px solid black;
+	padding-bottom: 15px;
+}
+
+#footer_links {
+	clear: both;
+	text-align: center;
+}
+
+#footer_links p {
+	display: inline-block;
+	padding: 0 20px;
+	color: blue;
+}
