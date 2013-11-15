@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>CSS Exercise One</title>
+	<style type="text/css" media="screen">
+		* {
+			margin: 0;
+			font-family: arial, verdana, sans-serif;
+		}
+		
+		body {
+			width: 600px;
+			background-color: #ffffff;
+		}
+		
+		h1 {
+			padding: 10px 5px;
+			background-color: #313031;
+			color: #F7E3C6; 			/* Club of Canada */
+		}
+		
+		h2, h3 {
+			padding: 20px 0 20px 0;
+		}
+		
+		#content {
+			background-color: #D67108;
+		}
+		
+		.nsdtr {
+			color: #187952;				/* NSDTR */
+			font-style: italic;
+		}
+		
+		.country {
+			color: #DE2C00;
+		}
+		
+		p {
+			line-height: 2em;
+			padding: 30px 0 0 10px;
+		}
+		
+		p strong abbr[title] {
+			color: #187952;				/* Toller */
+			font-style: italic;
+		}
+		
+		p strong em {
+			background-color: #ffffff;
+		}
+		
+		/* Grab all strongs that are children of all p's */
+		p>strong {
+			background-color: #F3CB29;
+			padding: 7px;
+		}
+	
+		ul {
+			list-style-type: none;
+			border-left: 4px solid #000000;
+			color: #DEB239;
+			padding-left: 13px;
+			font-weight: bold;
+		}
+
+		#content>ul:first-of-type {
+			padding: 15px 13px;
+			margin-left: 50px;
+		}
+		
+		/* Grab all the ul's descended from li, that's descended from ul */
+		ul li ul {
+			color: #F7E3C6;
+			border-left: none;
+			margin-left: 20px;
+			font-weight: bold;
+		}
+		
+		/* Grab the sibling ul that is adjacent to h3 */
+		h3+ul {
+			border-left: none;
+			padding-left: 20px;
+			margin-left: 15px;
+		}
+		
+	</style>
+</head>
+<body>
+<!-- START of exercise code -->
+	<div id="content">
+		<h1><abbr class="nsdtr" title="Nova Scotia Duck Tolling Retriever">NSDTR</abbr> Club of Canada</h1>
+		<p>The <strong>Nova Scotia Duck Tolling Retriever Club of <span class="country">Canada</span></strong> is the official voice of <strong><em>Tollers in Canada</em></strong>. Established in 1974, the club was formed to promote and educate about the breed and we celebrated 60 years of recognition with the <em>Canadian Kennel Club</em> in 2005.</p>
+		<p>The <strong><abbr title="Short for Nova Scotia Duck Tolling Retriever">Toller</abbr></strong> was recognized as a pure breed by the <strong>Canadian Kennel Club</strong> in 1945. The breed also enjoys the status of being the official dog of Nova Scotia, the province of its origin. The Toller is the first breed of dog to be recognized this way in Canada.</p>
+		 
+		<h2>Main Events</h2>
+		<ul>
+			<li>Conformation (Show)</li>
+			<li>Obedience (which includes):<ul>
+			<li>Standard Obedience</li>
+			<li>Rally Obedience</li>
+			<li>Distance Obedience</li></ul></li>
+			<li>Field Competitions</li>
+			<li>Agility</li>
+			<li>Tracking</li>
+		</ul>
+		<h3>Other Events</h3>
+			<ul>
+			<li>Flyball</li>
+			<li>Scent Hurdle Racing</li>
+			<li>Therapy Dog</li>
+			<li>Search and Rescue</li>
+		</ul>
+	</div>
+	<!-- END of exercise code -->
+</body>
+</html>

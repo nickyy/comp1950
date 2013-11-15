@@ -1,0 +1,240 @@
+/* Nicky Yuen */
+/* Stylesheet for http://students.thenet.nyuen/week/5/index.html */
+
+* {
+	font-family: arial, verdana, sans-serif;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+/********************* HEADER **********************/
+hgroup {
+	padding: 10px 0;
+	background-color: #DEBF10;
+	text-align: center;
+	font-size: 1.4em;
+	border-bottom: solid thin black;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+
+/********************* MAIN NAV **********************/
+ul {
+	text-align: center;
+	border-bottom: solid thin black;
+}
+
+li {
+	margin: 0 15px;
+	width: 150px;
+}
+
+ul li {
+	display: inline-block;
+	padding: 2px 0;
+}
+
+li a {
+	padding: 10px 0;
+	display: block;
+	border: 1px solid #ffffff;
+}
+
+li a:link {
+	background-color: #DEBF10;
+}
+
+li a:visited {
+	background-color: #DEBF10;
+}
+
+li a:hover {
+	background-color: #F1F440;
+	border: 1px solid black;
+}
+
+li a:active {
+}
+
+/********************* CONTAINER **********************/
+#container {
+	margin: 1em auto;
+	padding: 2px;
+	width: 900px;
+	border: 2px solid black;
+}
+
+#subheader table {
+	border: solid thin black;
+	width: 100%; /* table width is 100% of subheader div */
+	background-color: #dddddd;
+}
+
+#subheader table td {
+	width: 50%; /* each table cell is 50% of table width */
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#content_top_left, #content_top_right {
+	padding-bottom: 10px;
+}
+
+#content_top_left_images, #content_bottom_left {
+	float: left;
+}
+
+#content_top_right, #content_bottom_right {
+	float: right;
+}
+
+/********************* CONTENT TOP LEFT - IMAGES **********************/
+#content_top_left_images img {
+	border: 1px solid #ffffff;
+	padding: 2px;
+}
+
+#secondary_image img:hover {
+	border: 1px solid blue;
+}
+
+#content_top_left_images  {
+	float: left;
+	/*margin: 0 450px 0 0;*/
+}
+
+#primary_image {
+	margin: 10px;
+	border: 2px solid black;
+	position: center;
+}
+#secondary_image {
+	margin: 10px;
+}
+
+/********************* CONTENT TOP and BOTTOM **********************/
+#content_top {
+	height: 500px;
+	margin: 10px;
+	border-bottom: 2px dotted #aaaaaa;
+}
+
+#content_bottom  {
+	margin: 10px;
+	height: 500px;
+}
+/********************* CONTENT TOP RIGHT - CONTACT INFO **********************/
+#content_top_right {
+	padding: 10px;
+	width: 280px;
+	background-color: #ffffff;
+	font-size: 0.8em;
+}
+
+#content_top_right p, img {
+	padding: 5px 0;
+}
+
+#content_top_right .contact {
+	font-weight: bold;
+}
+
+#content_top_right h2 {
+	background-color: #DEBF10;
+	font-size: 20px;
+}
+
+.clear_content_foot {
+	clear: both;
+}
+
+#listing_address {
+	margin-top: 10px;
+}
+
+/********************* CONTENT BOTTOM LEFT - LISTING DESCRIPTION **********************/
+#content_bottom_left {
+	width: 560px;
+}
+
+#listing_description {
+	margin: 10px;
+	font-size: 0.9em;
+}
+
+#listing_description h2 {
+	background-color: #DEBF10;
+	font-size: 20px;
+}
+
+#listing_description p {
+	padding: 7px 0;
+	line-height: 1.3em;
+}
+
+#listing_description .emphasis {
+	font-weight: bold;
+	font-style: italic;
+}
+
+/********************* CONTENT BOTTOM RIGHT - LISTING AMENITIES **********************/
+#content_bottom_right {
+	width: 300px;
+}
+
+#listing_amenities {
+	font-size: 0.8em;
+	margin: 10px;
+}
+
+#listing_amenities h2 {
+	background-color: #DEBF10;
+	font-size: 20px;
+}
+
+#listing_amenities td {
+	padding: 7px 0 7px 15px;
+}
+
+#listing_amenities .row_header {
+	padding: 7px 0;
+	font-weight: bold;
+}
+
+#listing_amenities table {
+	margin-bottom: 20px;
+}
+
+/********************* DISCLAIMER **********************/
+#disclaimer {
+	background-color: #dddddd;
+	border-top: 1px dotted black;
+}
+
+#disclaimer p {
+	padding: 3px;
+	font-size: 0.7em;
+	text-align: center;
+}
+
+/********************* FOOTER **********************/
+
+footer {
+	clear: both;
+	padding: 10px 0;
+	background-color: #DEBF10;
+	text-align: center;
+}
+
+footer p {
+	padding: 5px;
+}

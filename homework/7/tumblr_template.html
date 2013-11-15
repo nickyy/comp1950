@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{Title}</title>
+    <meta name="color:PostText" content="#88783E">
+	<meta name="color:HeaderText" content="#000000">
+    <!-- embedded CSS allows content editors to continuously update and view their pages, rather than include an external file, and for Tumblr, once the file is uploaded, it can NEVER be edited! -->
+    
+    <link href='http://fonts.googleapis.com/css?family=Convergence|Russo+One|Raleway:600' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css"> 
+		#container, header, footer {
+			border: 5px solid blue;
+			border-radius: 10px;
+			margin: 10px auto;
+			width: 740px;
+			background-color: #ffffff;
+			color:{color:PostText};
+		}
+		
+        html {
+			background-color: #9E7244;
+		}
+        
+		body {
+			font-family: "Raleway", arial, sans-serif;
+			font-size: 14px;
+		}
+		
+        
+		h1, h2, footer {
+			color:{color:HeaderText};
+			text-align: center;
+            font-family: "Convergence", sans-serif;
+		}
+        
+        h2 {
+            font-family: "Russo One", sans-serif;
+        }
+
+		header h2 {
+			font-style: italic;
+			padding-bottom: 2px;
+			border-bottom: 2px solid blue;
+		}
+		
+		/*********************** Header links ***********************/
+		#page_links ul {
+    		list-style-type: none;
+		}
+		
+		#page_links li {
+			display: inline-block;
+			width: 200px;
+			padding: 3px;
+		}
+        
+		#page_links {
+			text-align: center;
+		}
+		
+		#page_links a {
+			background-color: white;
+			text-decoration: none;
+		}
+		
+		#page_links a:hover {
+			background-color: #F6D044;
+			color: black;
+		}
+		
+		/*********************************************************************/
+		
+		.post {
+			border-bottom: 3px solid blue;
+		}
+		
+		.post:last-child {
+			border: none;
+		}
+		
+		p.modified {
+			font-style: italic;
+			margin-top: 20px;
+			text-align: right;
+			font-size: 0.8em;
+		}
+		
+		.text, .photo, .link {
+			padding: 0 30px;
+		}
+		
+		.links {
+			display: block;
+		}
+		
+		img {
+			display: block;
+			margin: auto;
+		}
+		
+        /*********************** Tags ***********************/
+		ul.tags {
+			color: green;
+			font-size: 0.8em;
+			font-style: italic;
+		}
+		
+		ul.tags, ul.tags li {
+			margin: 0;
+			padding: 0;
+			display: inline;
+		}
+		
+		ul.tags li {
+			list-style: none;
+		}
+		
+		ul.tags li:after {
+			content: " # ";
+			color: #aaa;
+			color: red;
+			padding: 0 5px;
+		}
+
+		ul.tags li:last-child:after {
+			content: "";
+		}
+		
+		a:link {
+			color: blue;
+			font-size: 1em;
+			text-align: center;
+		}
+		
+		a:visited {
+			color: orange;
+		}
+		
+        /********************** Photos ***********************/
+		figure img {
+			float: left;
+		}
+		
+        /************ Jump Pagination ************/		
+		nav {
+			text-align: center;
+		}
+		
+		nav #pagination {
+			text-align: center;
+			font-size: 1.3em;
+			padding: 12px 0;
+		}
+		
+        
+		
+	</style>
+</head>
+<body>
+<header>
+	<hgroup>
+		<h1>Primum non nocere: {Title}</h1>
+		<h2>{Description}</h2>
+	</hgroup>
+	<!-- Navigation links -->
+	<div id="page_links">
+		<ul>
+			<li><a href="/">Home</a></li>
+			{block:Pages}
+			<li><a href="{URL}">{Label}</a></li>
+			{/block:Pages}
+		</ul>
+	</div>
+</header>
+	
+<main>
+	<div id="container">
+		{block:Posts}
+			<div class="{PostType} post">
+			
+				<!-- TAGS -->
+				{block:HasTags}
+					<ul class="tags">
+						Tags:
+						{block:Tags}
+						<li>
+							<a href="{TagURL}">{Tag}</a>
+						</li>
+						{/block:Tags}
+					</ul>		
+				{/block:HasTags}
+				
+				
+				<!-- TEXT POSTS -->
+				{block:Text}
+					<h2>{Title}</h2>
+					{Body}
+					<!-- Modified on -->
+					<p class="modified">Posted:
+						{block:Date}
+						{TimeAgo} on {DayOfWeek}, {Month} {DayOfMonth}, {Year}, at {12Hour}:{Minutes} {AmPm}
+						{/block:Date}
+					</p>
+				{/block:Text}
+				
+				
+				<!-- PHOTO POSTS -->
+				{block:Photo}
+					<h2>{Caption}</h2>
+					<a href="{PhotoURL-400}"><img src="{PhotoURL-400}"></a> <!-- can't have ANY width, only those approved -->
+					<!-- Modified on -->
+					<p class="modified">Posted:
+						{block:Date}
+						{TimeAgo} on {DayOfWeek}, {Month} {DayOfMonth}, {Year}, at {12Hour}:{Minutes} {AmPm}
+						{/block:Date}
+					</p>
+				{/block:Photo}
+				
+				
+				<!-- LINK POSTS -->
+				{block:Link}
+					<div class="links">
+						<h2><a href="{URL}" {Target}>{Name}</a></h2>
+						{block:Description}
+							{Description}
+						{/block:Description}
+						<!-- Modified on -->
+						<p class="modified">Posted:
+							{block:Date}
+							{TimeAgo} on {DayOfWeek}, {Month} {DayOfMonth}, {Year}, at {12Hour}:{Minutes} {AmPm}
+							{/block:Date}
+						</p>
+					</div>
+				{/block:Link}
+				
+				
+			</div> <!-- end ."{PostType} post" -->
+		{/block:Posts}
+		
+		
+		<!-- Bottom jump pagination -->
+		{block:HasPages}
+		<nav>
+			{block:Pagination}
+				<div id="pagination">
+					{block:PreviousPage}
+						<a href="{PreviousPage}">Previous</a>
+					{/block:PreviousPage}
+
+					{block:JumpPagination length="5"}
+						{block:CurrentPage}
+							<span class="current_page">{PageNumber}</span>
+						{/block:CurrentPage}
+
+						{block:JumpPage}
+							<a class="jump_page" href="{URL}">{PageNumber}</a>
+						{/block:JumpPage}
+					{/block:JumpPagination}
+
+					{block:NextPage}
+						<a href="{NextPage}">Next</a>
+					{/block:NextPage}
+				</div>
+			{/block:Pagination}
+		</nav>
+		{/block:HasPages} 
+			
+	</div> <!-- end #container -->
+</main>
+
+<footer>
+	<p>Copyright &copy; 2013, Nicky Yuen</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>CSS Examples: Second Exercise</title>
+	<style type="text/css" media="screen">
+	* {
+		font-family: arial, verdana, sans-serif;
+		margin: 0;
+	}
+	
+	body {
+		width: 600px;
+	}
+	
+	#content {
+		background-color: #BDBABD;
+	}
+	
+	h1 {
+		background-color: #FFFF00;
+		padding: 20px;
+		font-size: 3em;
+		border: 2px solid #000000;
+	}
+	
+	#rules {
+		border: 2px solid #000000;
+		border-top: none;
+	}
+	
+	.important {
+		background-color: #FFFF00;
+		padding: 3px;
+	}
+	
+	.critical {
+		border-bottom: 3px solid #FF0800;
+	}
+	
+	/* All li descendants of ul */
+	ul li {
+		list-style-type: square;
+		margin: 15px;
+	}	
+	
+	/* Grab all the children p's under id=rules. Restyle the other p's as needed. IS THERE A BETTER WAY TO DO THIS???? */
+	#rules>p {
+		color: yellow;
+		font-weight: bold;
+		text-align: center;
+		font-size: 1.5em;
+		padding: 20px 15px;
+	}
+	
+	/* Grab the sibling p adjacent to the first p selector under id=rules. This basically gets the SECOND p */
+	#rules p+p {
+		color: #0828FF;			/* Try to remember these rules if you can - maybe take them with you. */
+		font-weight: normal;
+		font-size: 1.3em;
+		font-style: italic;
+		text-align: left;
+		padding: 0px 20px;
+	}
+	
+	/* Grab the sibling p adjacent to the first, and in this case only, ul, under id=rules. This basically grabs the THIRD p */
+	#rules ul+p {
+		color: #000000;
+		font-style: normal;
+		font-weight: normal;
+		text-align: left;
+		font-size: 1em;
+		padding-top: 0px; 
+	}
+	
+	</style>
+</head>
+<body>
+<!-- START of exercise code -->
+<div id="content">
+	<h1>Dog Park Tips</h1>	
+	<div id="rules">
+		<p>Some rules for taking your dog to the dog park.</p>
+		<p>Try to remember these rules if you can - maybe take them with you.</p>
+		<ul>
+			<li>When you enter the park automatically take your dog of the leash. Not doing so can change the mentality of the pack and even start a fight</li>
+			<li>Clean up after your dog</li>
+			<li>If your dog is getting picked on this is normal, but it is <span class="important">up to you to draw the line</span> between playing and fighting</li>
+			<li>Have fun with your dog but don't run unless you want to get bit</li>
+			<li><span class="important">Bring a towel!</span> dogs get dirty and unless you want a muddy car bring a towel!</li>
+			<li>There are usually different parks for big and small dogs make sure that you are in the right one</li>
+			<li class="critical">Supervise your dog at all times</li>
+			<li class="important critical">Make sure that your dog has all of its shots</li>
+		</ul>
+		<p>Your co-operation makes a better experience for everyone</p>
+	</div>
+</div>
+ 
+ 
+<!-- END of exercise code -->
+</body>
+</html>

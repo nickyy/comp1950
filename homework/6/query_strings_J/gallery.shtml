@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>A Gallery of Goodness - Introducing J</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css" media="screen">
+</head>
+
+<body>
+	<header>
+		<h1>Introducing J</h1>
+	</header>
+	
+	
+	<section id="gallery">
+		<!--#if expr="\"$QUERY_STRING\" = \"\""-->
+		<img id="main_image" src="images/lol.jpg"></a>
+		<!--#else-->
+		<img id="main_image" src="images/<!--#echo var="QUERY_STRING"-->.jpg">
+		<!--#endif-->
+		<p><a href="gallery.shtml?lol"><img src="images/lol.jpg"></a></p>
+		<p><a href="gallery.shtml?white_baby"><img src="images/white_baby.jpg"></a></p>
+		<p><a href="gallery.shtml?avocado_vampire"><img src="images/avocado_vampire.jpg"></a></p>
+		<p><a href="gallery.shtml?with_a_goat"><img src="images/with_a_goat.jpg"></a></p>
+		<p><a href="gallery.shtml?green_shirt"><img src="images/green_shirt.jpg"></a></p>
+		<p><a href="gallery.shtml?year_old"><img src="images/year_old.jpg"></a></p>
+		<p><a href="gallery.shtml?half_naked"><img src="images/half_naked.jpg"></a></p>
+	</section>
+	
+	<footer>
+		<p>&copy; 2013, Nicky Yuen</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Nicky Yuen */
+/* Print stylesheet for http://students.thenet.nyuen/week/5/index.html */
+
+* {
+	font-family: arial, verdana, sans-serif;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#realtor_info a[href^="http"]:link:after, #realtor_info a:visited:after {
+   content: " (URL: " attr(href) ") ";
+   color: #DF7401;
+}
+
+#listing_address, #listing_description, #listing_amenities, #realtor_info, #disclaimer, figcaption, #amenities table {
+	margin: 10px;
+}
+
+/********************* HEADER **********************/
+hgroup {
+	padding: 10px 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1em;
+}
+
+/********************* MAIN NAV **********************/
+nav {
+	display: none;
+}
+
+/****************************************** CONTAINER *******************************************/
+#container {
+	margin: 2px auto;
+	padding: 2px;
+	width: 97%;
+	border: none;
+}
+
+/****************************************** SUBHEADER *******************************************/
+#subheader table {
+	border: solid thin black;
+	width: 100%; /* table width is 100% of subheader div */
+}
+
+#subheader table td {
+	width: 50%; /* each table cell is 50% of table width */
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/****************************************** IMAGES *******************************************/
+#gallery  figure img {
+	padding: 2px;
+	margin: 10px;
+	width: 90%;
+}
+#gallery figure {
+	width: 30%;
+	display: inline-block;
+	text-align: center;
+	margin: 15px 8px;
+	border: 1px solid #000000;
+}
+
+#gallery {
+	width: 50%;
+	display: inline;
+	margin: auto;
+}
+
+#gallery p {
+	display: none;
+}
+/****************************************** CONTACT *******************************************/
+#contact p, img {
+	padding: 5px 0;
+}
+
+#contact .contact {
+	font-weight: bold;
+}
+
+#map {
+	width: 80%;
+}
+
+#map iframe{
+	width: 100%;
+	height: 400px;
+}
+
+/****************************************** DESCRIPTION *******************************************/
+#listing_description {
+	font-size: 0.9em;
+}
+
+#realtor_info h2, #listing_address h2, #listing_description h2, #listing_amenities h2  {
+	border: 1px dotted black;
+	padding: 5px;
+}
+
+#listing_description p {
+	padding: 7px 0;
+	line-height: 1.3em;
+}
+
+#listing_description .emphasis {
+	font-weight: bold;
+	font-style: italic;
+}
+
+/****************************************** AMENITIES *******************************************/
+#listing_amenities {
+	font-size: 0.8em;
+}
+
+#listing_amenities td {
+	padding: 7px 0 7px 15px;
+}
+
+#listing_amenities .row_header {
+	padding: 7px 0;
+	font-weight: bold;
+}
+/***************************************** DISCLAIMER *******************************************/
+#disclaimer {
+	border-top: 2px solid #ffffff;
+}
+
+#disclaimer p {
+	padding: 10px 20px;
+	font-size: 0.7em;
+	text-align: center;
+}
+
+/****************************************** FOOTER ******************************************/
+footer { /*print*/
+	display: none;
+}
+

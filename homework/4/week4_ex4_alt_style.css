@@ -1,0 +1,174 @@
+/* Nicky Yuen */
+/* Alternate Stylesheet for http://students.thenet.ca/nyuen/week/4/week4_ex4.html */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+	width: 95%;
+	background-color: #ffffff;
+	margin: auto;
+	padding: 20px;
+}
+/*********************** Masthead **********************/
+hgroup h1, h2{
+	background-color: #EFC75A;
+	padding: 10px 20px;
+	color: #DE5121;
+}
+
+hgroup h1 {
+	font-size: 3em;
+	text-align: right;
+	font-weight: bold;
+}
+
+hgroup h2 {
+	text-align: right;
+	font-size: 2em;
+}
+/*********************** Nav column **********************/
+nav {
+	background-color: #9C6129;
+	text-align: center;
+}
+
+nav a {
+	border-radius: 5px;
+	text-decoration: none;
+	display: inline-block;
+	width: 150px;
+	margin: 10px 10px;
+	color: #ffffff;
+	box-shadow: 3px 3px 8px #ffffff;
+}
+
+nav a:hover {
+	background-color: #ffffff;
+	color: #DE5121;
+}
+
+nav > a {
+	background-color: #DE5121;
+	font-size: 1.3em;
+	padding: 10px 20px;
+}
+
+aside a {
+	background-color: #21CEDD;
+	padding: 5px;
+	font-size: 0.8em;
+}
+
+aside p.links_header {
+	display: none;
+	padding-top: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/*********************** Main body **********************/
+#content {
+	font-size: 0.9em;
+}
+
+#content  h2 {
+	font-size: 2em;
+	padding: 10px 0 10px 20px;
+}
+
+#description p {
+	font-size: 1.1em;
+	padding: 10px;
+}
+
+figure.image {
+	float: left;
+	border: 2px solid #000000;
+	background-color: #FBFEEA;
+	padding: 10px;
+	margin: 5px 20px;
+	box-shadow: 4px 4px 10px #aaaaaa;
+}
+
+figure.image figcaption {
+	text-align: center;
+}
+
+article.blog_entry, #description, #comments {
+	border: 2px solid #000000;
+	margin: 15px 0;
+}
+
+.blog_entry > header {
+	background-color: #EFC75A;
+}
+
+.blog_entry > p {
+	padding: 10px;
+	font-size: 1em;
+}
+
+p.posted_by {
+	padding: 0 0 10px 20px;
+}
+
+.blog_entry_footer {
+	clear: both;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 5px;
+	font-style: italic;
+}
+
+.blog_entry_footer time {
+	color: #ff0000;
+}
+
+#comments p {
+	padding: 3px;
+}
+
+#comments article p+p {
+	padding-left: 30px;
+}
+
+p.comment_header, p.comment_response_header {
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.response {
+	padding-left: 25px;
+	background-color: #F7E7DE;
+}
+
+/*********************** Footer **********************/
+footer {
+	clear: both;
+	font-size: 1.1em;
+	text-align: center;
+	background-color: #EFC75A;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+footer p {
+	padding: 10px 0;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer p.validation {
+	display: inline;
+	padding: 10px 20px;
+}
+
+footer p#footer_nav a {
+	padding: 10px;
+}

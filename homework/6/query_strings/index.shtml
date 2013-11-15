@@ -1,0 +1,160 @@
+<!--#include file="inc/top_most.inc"-->
+	
+<!--******************** MAIN NAVIGATION ********************-->
+	
+<!--#include file="inc/nav.inc"-->
+
+	<section id="container">
+<!--******************** LISTING MAIN DETAILS ********************-->
+		<section id="subheader">
+			<table title="MUM Info and Listing Price">
+				<tr>
+					<td>MUM# 2584</td>
+					<td>Price: EGP&pound;1,242,170,000</td>
+				</tr>
+			</table>
+		</section>
+				
+<!--******************** IMAGES ********************-->
+		<section id="content_top">
+			<section id="images">
+				<div id="primary_image">
+					<figure>
+						<!--#if expr="\"$QUERY_STRING\" = \"\"" -->
+						<img src="images/pyramids.jpg" id="primaryImg" alt="Pyramids from outside">
+						<!--#else -->
+						<img src="images/<!--#echo var="QUERY_STRING"-->.jpg" id="primaryImg" alt="Pyramids from outside">
+						<!--#endif -->
+						<figcaption id="primaryCap">Pyramids from outside</figcaption>
+					</figure>
+				</div>
+	
+			<!--#include file="inc/gallery.inc"-->
+			
+<!--******************** CONTACT ********************-->
+			<section id="contact">
+				<div id="realtor_info">
+					<h2>Contact</h2>
+					<img src="images/morsi.jpg" width="100" alt="Mr. Mohamed Morsi image">
+					<p>Mr. Mohamed Morsi</p>
+					<p>President of Egypt</p>
+					<p><span class="contact">Telephone: </span>7998013 - 7948031 - 7254035</p>
+					<p><span class="contact">Email: </span><a href="mailto:fake_address@fake_domain.com?subject=MUM%20#2584%20Inquiry">contact@mummyhomes.com</a></p>
+					<p><span class="contact">Website: </span><a href="http://www.egypt.gov.eg/english/">http://www.egypt.gov.eg/english/</a></p>
+				</div>
+				
+				<div id="listing_address">
+					<h2>Listing Address</h2>
+					<p>Al Haram, Giza, Egypt</p>
+					<p>Lat/Long: <a href="http://maps.google.com/maps/place?ftid=0x14584587ac8be2a5:0xf253e8d13c591ffb&amp;q=29.9792%C2%B0+N,+31.1342%C2%B0+E&amp;hl=en&amp;ved=0CA0Q-gswAA&amp;sa=X&amp;ei=B2QUUZqYA8igiALblYGoDQ" target="_blank">29.9792&deg; N, 31.1342&deg; E</a></p>
+					<p>(Near the cross roads of Cairo Al Faoum Desert Road and Cairo Alexandra Desert Road.)</p>
+					<div id="map">
+						<iframe src="http://maps.google.com/maps?q=29.9792%C2%B0+N,+31.1342%C2%B0+E&amp;hl=en&amp;ie=UTF8&amp;view=map&amp;ftid=0x14584587ac8be2a5:0xf253e8d13c591ffb&amp;ftt=3474&amp;geocode=FQ1yyQEdGBLbAQ&amp;split=0&amp;sll=29.979149,31.134232&amp;sspn=0.002103,0.002384&amp;hq=&amp;hnear=Great+Pyramid+of+Giza,+Al+Haram,+Giza,+Egypt&amp;ll=29.9792,31.1342&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;output=embed"></iframe><br><small><a href="http://maps.google.com/maps?q=29.9792%C2%B0+N,+31.1342%C2%B0+E&amp;hl=en&amp;ie=UTF8&amp;view=map&amp;ftid=0x14584587ac8be2a5:0xf253e8d13c591ffb&amp;ftt=3474&amp;geocode=FQ1yyQEdGBLbAQ&amp;split=0&amp;sll=29.979149,31.134232&amp;sspn=0.002103,0.002384&amp;hq=&amp;hnear=Great+Pyramid+of+Giza,+Al+Haram,+Giza,+Egypt&amp;ll=29.9792,31.1342&amp;spn=0.006295,0.006295&amp;t=m&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+					</div>
+				</div>
+
+			</section> <!-- end CONTACT -->
+		</section> <!-- end CONTENT_TOP -->
+		
+		<div class="clear_content_foot"></div>	
+
+		<section id="content_bottom">
+<!--******************** DESCRIPTION ********************-->
+			<section id="description">
+				<div id="listing_description">
+					<h2>General Description</h2>
+					<p>Looking for that perfect getaway home, but just not finding it within a stones throw? Wanting something a little out of the ordinary, with a splash of character, and maybe with a bit of history? Look no further than this beautiful, sun-drenched and spacious, uniquely hand-crafted, one of a kind abode, <span class="emphasis">fit for a KING</span>! Once the tallest man-made structure at 139 metres high, this home, at one point the living space to ancient kings and queens from the days of yore, boasts a rich (and ancient) history. It was painstakingly crafted by no fewer than 20,000 men over a duration of 20 years, weighs 5.9 million tons, and is made of approximately 2.3 million limestone blocks! Needless to say, blood, sweat, and tears brought this massively marvelous masterpiece into existence ... and maybe by some decree of an eccentric Egyptian pharaoh named Khufu.</p>
+					
+					<p>Adorning various passageways, corridors, and rooms, are intricately carved heiroglyphics, still not fully decipherable to man, but the longer you spend in this new home of yours, the more you'll probably learn! Included with the splendor and majesty of this exquisite edifice is a subterranean, unfinished chamber which can be used as your bomb shelter.</p>
+					
+					<p>This palatial estate is also a mathematical marvel, <span class="emphasis">at no extra cost to you</span>: with a perimeter to height ratio of 1760/280 cubits, this equates to 2&pi; to an accuracy better than 0.05% (corresponding to the well-known approximation of &pi; as 22/7). Even the four corners of its base correspond almost exactly to the four cardinal points!</p>
+				</div>
+			</section> <!-- end DESCRIPTION -->		
+			
+<!--******************* AMENITIES ********************-->	
+			<section id="amenities">
+				<div id="listing_amenities">		
+					<h2>Amenities</h2>
+					<table id="amenities_table" title="MUM#2584 Amenities">
+						<tr>
+							<td class="row_header">Square Footage</td>
+							<td>571,000</td>
+						</tr>
+						<tr>
+							<td class="row_header">Sleeping Chambers</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td class="row_header">Relieving Chambers</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td class="row_header">Primary Chamber Dimensions</td>
+							<td>17' x 34' (5.2m x 10.5m)</td>
+						</tr>
+						<tr>
+							<td class="row_header">Secondary Chamber Dimensions</td>
+							<td>19' x 17' (5.8m x 5.2m)</td>
+						</tr>
+						<tr>
+							<td class="row_header">Grand Gallery Dimensions</td>
+							<td>153' x 6.8' x 28' (46.7m x 2.1m x 8.6m)</td>
+						</tr>
+						<tr>
+							<td class="row_header">Year Completed</td>
+							<td>2560 BC</td>
+						</tr>
+						<tr>
+							<td class="row_header">Age</td>
+							<td>4500+ years</td>
+						</tr>
+						<tr>
+							<td class="row_header">Property Type</td>
+							<td>Ancient Wonder of the World</td>
+						</tr>
+						<tr>
+							<td class="row_header">Basement</td>
+							<td>Partially finished</td>
+						</tr>
+					</table>
+					
+					<h2>Additional Features</h2>
+					<table id="amenities_features" title="MUM#2584 Additional Features">
+						<tr>
+							<td class="row_header">Privacy</td>
+							<td>Several km's from nearest civilization</td>
+						</tr>
+						<tr>
+							<td class="row_header">Dining</td>
+							<td>Fine dining abounds in nearby Cairo</td>
+						</tr>
+						<tr>
+							<td class="row_header">Transportation</td>
+							<td>Camels and dunebuggies are just a hop away!</td>
+						</tr>
+						<tr>
+							<td class="row_header">Local Attractions</td>
+							<td>There are other pyramids in the vicinity; explore the local critters including scorpions and cobras!</td>
+						</tr>
+						<tr>
+							<td class="row_header">Views</td>
+							<td>Spectacular, unobscured panoramic views (while perched atop your pyramid)</td>
+						</tr>
+						<tr>
+							<td class="row_header">Energy Channeling</td>
+							<td>Something about being able to channel your energy because of the shape of the pyramid...</td>
+						</tr>
+						<tr>
+							<td class="row_header">Hidden Treasures</td>
+							<td>Maybe you'll stumble upon some hidden gold somewhere in your wanderings about your palatial palace</td>
+						</tr>
+					</table>
+				</div>	<!-- end LISTING AMENITIES -->
+			</section> <!-- end AMENITIES -->
+		</section> <!-- end CONTENT BOTTOM -->
+		
+		<div class="clear_content_foot"></div>
+
+<!--******************** DISCLAIMER **********************-->		
+
+<!--#include file="inc/bottom_most.inc"-->

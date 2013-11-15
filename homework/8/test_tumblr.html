@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{Title}</title>
+    <meta name="color:PostText" content="#88783E">
+    <meta name="color:HeaderText" content="#000000">
+    <!-- embedded CSS allows content editors to continuously update and view their pages, rather than include an external file, and for Tumblr, once the file is uploaded, it can NEVER be edited! -->
+    
+	{block:Description}
+		<meta name="description" content="{MetaDescription}">
+	{/block:Description}
+	
+    <link href='http://fonts.googleapis.com/css?family=Convergence|Russo+One|Raleway:600' rel='stylesheet' type='text/css'>
+    
+    <style type="text/css"> 
+		body {
+			font-family: arial, san-serif;
+			width: 70%;
+			margin: auto;
+			background-color: black;
+			color: white;
+		}
+		
+		#container {
+			background-color: #000000;
+			padding: 10px 0;
+		}
+		
+		header {
+			text-transform: capitalize;
+			border-radius: 5px;
+			border: 1px solid white;
+			margin: 10px 0;
+		}
+		
+		header h1, header h2{
+			text-align: center;
+			color: white;
+		}
+		
+		/********************** Side Navigation ****************/
+		nav#links{
+			float: left;
+			width: 400px;
+			border: 1px solid white;
+			border-radius: 10px;
+		}
+		
+		nav#links ul {
+			list-style-type: none;
+			margin-left: -20px;
+		}
+		
+		nav#links li {
+			margin: 10px 5px;
+		}
+		
+		/*********************** a ***********************/
+		a:link {
+			text-decoration: none;
+			color: yellow;
+			padding: 2px 5px;
+		}
+		
+		a:visited {
+			color: orange;
+		}
+		
+		.text a:hover, .link a:hover, .tags a:hover, #bottom_nav a:hover { /* everything BUT the image link */
+			background-color: gray;
+		}
+		
+		/********************* Main section ***********************/
+		section #main_posts {
+			margin: 0 0 0 430px;
+			width: 900px;
+			background: #000000;
+			border: 1px solid white;
+			border-radius: 10px;
+		}
+		
+		#clearfloat {
+			clear: both;
+		}
+		
+		#bottom_nav {
+			border: 1px solid #ffffff;
+			border-radius: 10px;
+			margin-top: 25px;
+		}
+		
+		.text, .link, .photo {
+			padding: 0 10px;
+		}
+		
+		.posted_on {
+			text-align: right;
+			font-size: 0.8em;
+			font-style: italic;
+			margin-top: 40px;
+		}
+		
+		footer, #jump_nav, h1, h2 {
+			text-align: center;
+		}
+		
+		img {
+			display: block;
+			margin: auto;
+		}
+		
+		.post {
+			padding: 0 20px;
+			border-bottom: 2px solid red;
+		}
+		
+		.post:last-child {
+			border-bottom: none;
+		}
+		
+	
+		
+		/************************ Tags *************************/
+		.tag_label {
+			text-align: right;
+			font-style: italic;
+			color: orange;
+		}
+		
+		.tags:after {
+			content: " # ";
+		}
+		
+		.tags:last-child:after {
+			content: "";
+		}
+		
+		.tags, .tag_label {
+			font-size: 12px;
+		}
+		
+		/********************** Text ********************/
+		.textbody {
+			padding: 10px;
+		}
+		
+		#jump_nav {
+			padding: 5px 0;
+		}
+		
+		p.photo_caption {
+			text-align: center;
+			background: red;
+		}
+		
+		.post h2 {
+			font-size: 16px;
+		}
+		
+		/************************ Jump Pagination *******************/
+		#pagination .current_page {
+			padding: 2px 5px 5px;
+			
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<hgroup>
+			<h1>{Title}</h1>
+			<h2>{Description}</h2>
+		</hgroup>
+	</header>
+	
+	<section id="container">	
+	
+		<nav id="links">
+			<ul>
+				<li><a href="/">Home</a></li>
+				{block:Pages}
+				<li><a href="{URL}">{Label}</a></li>
+				{/block:Pages}
+			</ul>
+		</nav>
+	
+		<section id="main_posts">
+		{block:Posts}
+			<div class="{PostType} post">
+				{block:HasTags}
+					<p class="tag_label">Tags:
+					{block:Tags}
+					<span class="tags"><a href="{TagURL}">{Tag}</a></span>
+					{/block:Tags}
+					</p>
+				{/block:HasTags}
+				
+				{block:Text}
+					{block:Title}
+					<h2>{Title}</h2>
+					{/block:Title}
+					{Body}					
+				{/block:Text}
+			
+				{block:Photo}
+					{block:Caption}
+					<h2>{Caption}</h2>
+					{/block:Caption}
+					<a href="{PhotoURL-500}"><img src="{PhotoURL-400}"></a>
+				{/block:Photo}
+				
+				{block:Link}
+					<a href="{URL}" {Target}>{Name}</a>
+					{block:Description}
+					<p>{Description}</p>
+					{/block:Description}
+				{/block:Link}		
+
+				<div class="posted_on">
+				{block:Date}
+					<p>Posted on: {DayOfWeek}, {Month} {DayOfMonthWithZero}, {Year}, at {12HourWithZero}:{Minutes} {AmPm}</p>
+				{/block:Date}
+				</div>			
+			</div>
+		{/block:Posts}
+		</section>
+			
+		<div id="clearfloat"></div>
+		
+		<section id="bottom_nav">
+			{block:HasPages}
+			<nav id="jump_nav">
+				{block:Pagination}
+					<div id="pagination">
+						{block:PreviousPage}
+							<a href="{PreviousPage}">Previous</a>
+						{/block:PreviousPage}
+						
+						{block:JumpPagination length="3"}
+							{block:CurrentPage}
+								<span class="current_page">{PageNumber}</span>
+							{/block:CurrentPage}
+							
+							{block:JumpPage}
+								<a class="jump_page" href="{URL}">{PageNumber}</a>
+							{/block:JumpPage}
+						{/block:JumpPagination}
+						
+						{block:NextPage}
+							<a href="{NextPage}">Next</a>
+						{/block:NextPage}
+					</div>
+				{/block:Pagination}
+			</nav>	
+			{/block:HasPages}
+		</section>
+		
+	</section>
+	
+	<footer>
+		<p>Copyright &copy; 2013, Test Tumblr</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Links</title>
+	<style>
+	body {
+		font-family: Tahoma, Verdana, Sans-serif;
+		color: #333;
+	}
+	h1 {
+		font-size: 125%;
+	}
+	
+	a {
+		background-repeat: no-repeat;
+		background-position: right;
+		padding-right: 45px; /* provides space to right of link text */
+	}
+	
+	/* Link for PDF */
+	a[href$=".pdf"] {
+		background-image: url(images/pdf.gif);
+	}
+	
+	/* Link for Word */
+	a[href$=".doc"] {
+		background-image: url(images/word.gif);
+	}
+	
+	/* Link for Excel */
+	a[href$=".xls"] {
+		background-image: url(images/excel.gif);
+	}
+	</style>
+</head>
+<body>
+	<h1>Project Site</h1>
+		<p>Documents available:</p>
+		<ul>
+		<li>A completed <a href="documents/outline.pdf">Project Outline</a> for this year</li>
+		<li>A list of <a href="documents/tasks.doc">Tasks and Responsibilities</a> for all team members</li>
+		<li>The complete <a href="documents/budget.xls">Timeline and Budget</a> from finance</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* Nicky Yuen */
+/* Stylesheet for http://students.thenet.ca/nyuen/week/3/index.html */
+
+html {
+	font-family: arial, verdana, sans-serif;
+	background-color: #000000;
+}
+
+body {
+	width: 940px;
+	margin: 18px auto 18px auto;
+	padding-right: 40px; /* This leaves a 40px padding all the way down the right side */
+	background-color: #ffffff;
+}
+/*********************** Masthead **********************/
+hgroup, nav, #content, h1, h2 {
+	background-color: #ffffff;
+}
+
+hgroup h1 {
+	margin: 18px 0 0 270px;
+	font-weight: bold;
+}
+
+hgroup h2 {
+	margin: 17px 0 20px 320px;
+	font-size: 1.2em;
+}
+/*********************** Nav column **********************/
+nav {
+	float: left;
+	width: 190px;
+	font-size: 0.9em;
+}
+
+nav  a {
+	display: block;
+	padding: 0 0 5px 30px;
+}
+
+nav #links {
+	padding: 70px 0 0 20px;
+}
+
+nav p.links_header {
+	font-weight: bold;
+}
+
+nav #links a {
+	margin-left: -20px;
+}
+/*********************** Main body **********************/
+#content {
+	margin-left: 200px;
+	font-size: 0.9em;
+}
+
+#content h3 {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+section#daycare, section#swimming {
+	border-bottom: 1px solid #aaaaaa;
+}
+
+figure.image {
+	float: right;
+	margin: 0 0 0 10px;
+	border: 1px solid #aaaaaa;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: #FBFEEA;
+}
+
+figure.image figcaption {
+	font-style: italic;
+	font-family: "times new roman", serif;
+	text-align: center;
+	padding-top: 4px;
+}
+
+p.posted {
+	font-style: italic;
+}
+
+.section_footer {
+	clear: both;
+	padding-top: 10px;
+	text-align: right;
+	font-size: 0.8em;
+}
+
+.section_footer time {
+	color: #ff0000;
+}
+
+section.comments p.comment_header, p.comment_response_header {
+	font-size: 0.75em;
+}
+
+section.comments p, div.response p {
+	margin: 6px 0;
+}
+
+div.response {
+	background-color: #eeeeee;
+	padding: 7px 0 20px 15px;
+}
+/*********************** Footer **********************/
+footer {
+	clear: both;
+	font-size: 0.8em;
+	text-align: center;
+	margin-top: 10px;
+	padding: 20px 0;
+}
+
+footer p.validation {
+	display: inline;
+	margin: 0 10px 0 10px;
+}
+
+footer p#footer_nav a {
+	margin: 0 10px 0 10px;
+}

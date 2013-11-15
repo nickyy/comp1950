@@ -1,0 +1,506 @@
+/* Nicky Yuen */
+/* Alternate stylesheet for http://students.thenet.nyuen/week/5/index.html */
+
+body {
+	width: 70%;
+	font-family: tahoma, verdana, sans-serif;
+	height: 100%;
+	margin: auto;
+	background-color: #000000;
+}
+
+a {
+	text-decoration: none;
+}
+/****************************************** HEADER *******************************************/
+header {
+	background-color: #EC5A0C;
+	border-radius: 6px;
+/*	max-height: 70px;*/
+	text-align: left;
+	font-weight: bold;
+	font-size: 2em;
+	padding: 10px 40px;
+	color: #ECE10C;
+	font-family: papyrus, serif;
+}
+
+h1 {
+	font-size: 1.3em;
+}
+
+h2 {
+	font-size: 0.9em;
+}
+
+#container {
+	color: #000000;
+	background-color: #F0E074;
+	border-radius: 6px;
+	margin: 10px 0 10px 0;
+	padding: 10px 0;
+}
+
+#subheader table {
+	
+}
+
+#container h2 {
+	background-color: #EC5A0C;
+	color: #ECE10C;
+	font-family: papyrus, tahoma, serif;
+	padding: 5px;
+}
+
+#listing_amenities h2, #contact h2 {
+	font-size: 20px;
+	font-family: papyrus, tahoma, serif;
+	padding: 5px;
+}
+/****************************************** NAVIGATION *******************************************/
+nav {
+	float: left;
+	margin: -60px 0 0 -185px;
+}
+
+nav > ul > li{
+	margin: 15px 0;
+}
+
+nav a {
+	display: block;
+	padding: 20px 15px;
+	font-family: papyrus, serif;
+	border-radius: 6px;
+}
+
+nav a:link {
+	background-color: #ECE10C;
+	color: #EC5A0C;
+}
+
+nav a:visited {
+	background-color: #EC5A0C;
+	color: #ffffff;
+}
+
+nav a:hover {
+	background-color: #ffffff;
+	color: #EC5A0C;
+}
+
+nav a:active {
+	box-shadow: 0 0 15px 5px #ECE10C;
+	color: #000000;
+}
+
+li#style_switcher {
+	background-color: #0914EF;
+	display: inline-block;
+	padding: 20px 15px;
+	font-weight: bold;
+	font-family: papyrus, serif;
+	border-radius: 6px;
+	margin: 0;
+	text-align: center;
+}
+
+li#style_switcher li a { /* "Main Style" and "Alternate Style" buttons */
+	background-color: #0914EF;
+	border: 1px solid #F1F440;
+	padding: 5px 0;
+	display: inline-block;
+	width: 100px;
+}
+
+li#style_switcher:hover ul { /* the area around the two style buttons */
+	position: absolute;
+	display: block;
+	width: 125px;
+	border-radius: 6px;
+	margin: 20px 0 10px 0;
+}
+
+li#style_switcher ul { /* the area immediately around the two buttons; need to hide this */
+	text-align: center;
+	display: none;
+	background-color: #0914EF;
+}
+	
+li#style_switcher:hover {
+	background-color: #0914EF;
+}
+
+li#style_switcher a:link {
+	color: #ffffff;
+}
+
+li#style_switcher a:hover {
+	background-color: #0914EF;
+	border: 1px solid #000000;
+}
+
+li#style_switcher > ul > li {
+	padding: 10px 0;
+}
+/****************************************** SUBHEADER *******************************************/
+
+#subheader table {
+	float: right;
+	/*padding: 5px;*/
+	margin: 0 10px 10px;
+	min-width: 240px;
+	border: solid thin black;
+	width: 50%; /* table width is 100% of subheader div */
+	background-color: #dddddd;
+}
+
+#subheader table td {
+	padding: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#subheader table td+td {
+	text-align: right;
+}
+
+/****************************************** CONTACT *******************************************/
+#contact{
+	margin: 0 10px;
+	padding-bottom: 5px;
+	width: 45%;
+}
+
+#contact a:visited {
+	color: #EC5A0C;
+}
+
+#realtor_info, #listing_address {
+	padding-bottom: 10px;
+	width: 100%;
+}
+#realtor_info p, #listing_address p{
+	padding: 5px;
+}
+
+#realtor_info img {
+	padding: 5px 0;
+}
+
+#map iframe {
+	width: 100%;
+	height: 400px;
+}
+
+/****************************************** IMAGES *******************************************/
+#images  {
+	float: right;
+	/*margin: 0 450px 0 0;*/
+	width: 50%;
+	margin: 0 10px 10px;
+}
+
+#secondary_image {
+	margin: 20px 10px 10px 10px;
+}
+
+#primary_image {
+	height: 350px;
+}
+
+#primary_image img {
+	width: 90%;
+	margin: 0 20px;
+}
+
+#primary_image figure figcaption {
+	font-style: italic;
+	text-align: center;
+}
+
+#secondary_image img {
+	width: 30%;
+	border: 1px solid #EC5A0C;
+	padding: 2px;
+}
+
+#secondary_image img:hover {
+	border: 1px solid blue;
+}
+
+#secondary_image figure {
+	display: inline;
+}
+
+#secondary_image figure figcaption {
+	display: none;
+}
+/****************************************** AMENITIES *******************************************/
+#amenities {
+	margin: 10px;
+	font-size: 0.9em;
+	width: 45%;
+}
+
+#listing_amenities td, #listing_amenities h2{
+	padding: 5px;
+	width: 100%;
+}
+
+#listing_amenities table {
+	margin: 10px 0;
+	width: 100%;
+}
+
+#listing_amenities table td {
+	text-align: right;
+	padding-right: 5px;
+	width: 50%;
+}
+
+#listing_amenities table td+td {
+	text-align: left;
+	padding-left: 5px;
+}
+
+#listing_amenities .row_header {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/****************************************** DESCRIPTION *******************************************/
+#description {
+	float: right;
+	width: 50%;
+	line-height: 1.2em;
+	margin: 0 10px 10px;
+}
+
+#description h2 {
+	font-size: 1.4em;
+}
+
+#description p {
+	padding: 5px;
+	font-size: 0.9em;
+}
+
+#description .emphasis {
+	color: #EC5A0C;
+	text-decoration: underline;
+	font-weight: bold;
+}
+/****************************************** DISCLAIMER *******************************************/
+#disclaimer {
+	font-size: 0.7em;
+	text-align: center;
+	background-color: #F4EFC0;
+	margin: 5px;
+	padding: 5px;
+	font-style: italic;
+}
+
+/****************************************** FOOTER *******************************************/
+.clear_content_foot {
+	clear: both;
+}
+
+footer {
+	background-color: #EC5A0C;
+	border-radius: 8px;
+	font-size: 14px;
+	font-family: papyrus, serif;
+	text-align: center;
+	padding: 10px 0;
+}
+
+footer p{
+	padding: 10px 0;
+}
+
+footer a {
+	border-radius: 6px;
+	padding: 5px;
+	margin: 0 20px;
+}
+
+footer a:hover {
+	background-color: #ECE10C;
+}
+
+
+
+
+
+/***************************************************************************/
+/******************************* MEDIA QUERY *******************************/
+/***************************************************************************/
+@media only screen and (max-width: 480px) {
+	*, #listing_description h2, #listing_address h2, #listing_amenities h2, #realtor_info h2, footer, nav a, li#style_switcher {
+		font-family: arial, verdana, sans-serif;
+	}
+	
+	body {
+		width: 100%;
+	}
+	
+	h1 {
+		font-size: 1em;
+		text-align: center;
+		font-family: papyrus, "time new roman", serif;
+	}
+	
+	h2 {
+		font-size: 0.6em;
+		text-align: center;
+		font-family: papyrus, "time new roman", serif;
+	}
+	
+	#container, #content_top, #content_bottom {
+		width: 98%;
+		background-color: #000000;
+		color: #ffffff;
+		margin: auto;
+	}
+	
+	#contact, #description, #amenities, #listing_description, #listing_amenities, #realtor_info, #listing_address  {
+		float: none;
+		width: 100%;
+		margin: auto;
+	}
+	
+	#subheader {
+		width: 420px;
+		margin: auto;
+	}
+	
+	#subheader table {
+		float: none;
+		background-color: #EC5A0C;
+		width: 95%;
+	}
+	
+	#listing_amenities h2, #listing_description h2, #realtor_info h2, #listing_address h2 {
+		font-size: 1.3em;
+		padding: 3px;
+	}
+	
+	#listing_amenities table {
+		margin: 10px auto;
+		width: 90%;
+	}
+		
+	nav {
+		display: block;
+		width: 440px;
+		float: none;
+		margin: auto;
+	}
+	
+	nav ul {
+		padding: 5px;
+		margin: auto;
+	}
+	
+	nav a {
+		padding: 10px 5px;
+		font-size: 0.8em;
+		text-align: center;
+		width: 100px;
+	}
+	
+	nav  ul > li {
+		display: inline-block;
+		width: 90px;
+		margin: 10px 20px;
+	}
+	
+	li#style_switcher {
+		font-size: 0.8em;
+		margin: 5px 20px;
+		padding: 10px 5px;
+		width: 100px;
+	}
+	
+	li#style_switcher li a { /* "Main Style" and "Alternate Style" buttons */
+		background-color: #0914EF;
+		border: 1px solid #F1F440;
+		font-size: 0.8em;
+		text-align: center;
+		margin: 0 0 -10px -5px; /* moves the two inner buttons around */
+	}
+
+	li#style_switcher li {
+		margin: 0;
+		padding: 0;
+	}
+	
+	li#style_switcher:hover ul { /* the area around the two style buttons */
+		position: absolute;
+		display: block;
+		padding: 10px;
+		width: 90px;
+		border-radius: 6px;		
+		margin: 0 0 -10px -5px;
+	}
+	
+	li#style_switcher:hover {
+		background-color: #0914EF;
+	}
+
+	li#style_switcher a:hover {
+		background-color: #0914EF;
+		border: 1px solid #000000;
+	}
+
+
+	li#style_switcher > ul > li {
+		padding: 5px 0;
+	}
+	
+	#images {
+		float: none;
+		width: 95%;
+		margin: auto;
+	}
+	
+	#images figure {
+		float: none;
+	}
+	
+	#primary_image {
+		height: 330px;
+	}
+
+	#primary_image img {
+		width: 98%;
+		padding: 0;
+		margin: auto;
+	}
+
+	#primary_image figure figcaption {
+		font-style: italic;
+		text-align: center;
+	}
+
+	#secondary_image img {
+		width: 45%;
+		border: 1px solid #EC5A0C;
+		padding: 2px;
+		margin: 0;
+	}
+
+	#disclaimer {
+		width: 90%;
+		margin: auto;
+		background-color: #aaaaaa;
+		font-size: 0.8em;
+		font-style: normal;
+		color: #ffffff;
+	}
+	
+	footer {
+		width: 100%;
+	}
+}

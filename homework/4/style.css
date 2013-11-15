@@ -1,0 +1,50 @@
+/* Nicky Yuen, Week 4, Index stylesheet */
+
+* {
+	font-family: arial, verdana, sans-serif;
+	background-color: #ffffff;
+}
+
+body {
+	width: 500px;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+nav a {
+	background-color: #EC5A0C;
+	display: block;
+	margin: 20px 0;
+	padding: 7px 7px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+nav a:link {
+	box-shadow: 0px 3px 5px #000000; /* box-shadow: h-shadow v-shadow blur spread color inset; */
+	border: 3px outset #EC5A0C;	
+	color: yellow;
+}
+
+nav a:visited {
+	background-color: #67a0cf;
+	color: #ffffff;
+}
+
+nav a:hover {
+	/*background-color: #ffff00;*/
+	box-shadow: none;
+	/*color: #000000;*/
+	position:relative;
+	top:5px;
+}
+
+nav a:active {
+}
+
+footer {
+	text-align: center;
+}

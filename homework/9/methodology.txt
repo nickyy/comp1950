@@ -1,0 +1,35 @@
+How do you approach a project:
+0. Feasibility study - is the project practical, realistic?
+1. Gather requirements (functional, UI/UX, system, testing, performance)
+2. Divide and conquer
+	- Build from ground up, manageable pieces
+	- Span over several iterations
+	- divide responsibilities
+	- documentation and communication (client feedback as components are completed)
+3. Validation testing (throughout project lifecycle)
+4. Deployment
+5. Maintenance
+
+	
+Does it change according to size of the job?
+No. Methodologies are fundamental to all projects, though the scope of each phase may expand/shrink.
+
+
+Do you have defined phases?
+Yes. See above.
+
+
+What works well? What doesn't?
+Well:
+- Leverage skills and tasks
+- save your work often
+- early investment in agreement on purpose of the site pays off
+- stick to the schedule as much as possible
+- frequent communication/feedback/reviews with/from client and team members
+- following coding standards
+
+Not well:
+- not subdividing large tasks
+- lack of communication among team members
+- no milestones/deliverables
+- lack of integration testing

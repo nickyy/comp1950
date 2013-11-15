@@ -1,0 +1,346 @@
+/* Nicky Yuen */
+/* Main stylesheet for http://students.thenet.nyuen/week/10/index.html */
+
+* {
+	font-family: arial, verdana, sans-serif;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+/********************* HEADER **********************/
+hgroup {
+	padding: 10px 0;
+	background-color: #DEBF10;
+	text-align: center;
+	font-size: 1.4em;
+	border-bottom: solid thin black;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+/********************* MAIN NAV **********************/
+nav > ul {
+	text-align: center;
+	border-bottom: solid thin black;
+}
+
+nav > ul > li {
+	margin: 0 15px;
+	width: 150px;
+}
+
+ul li {
+	display: inline-block;
+	padding: 2px 0;
+}
+
+li a {
+	color: #000000;
+	font-weight: bold;
+	padding: 10px 0;
+	display: block;
+}
+
+li a:link {
+	background-color: #DEBF10;
+}
+
+li a:visited {
+	background-color: #DEBF10;
+}
+
+li a:hover {
+	background-color: #F1F440;
+}
+
+li a:active {
+}
+
+li#style_switcher {
+	background-color: #0914EF;
+	display: inline-block;
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+li#style_switcher li a {
+	background-color: #DEBF10;
+	border: 1px solid #F1F440;
+	display: inline-block;
+	width: 100px;
+}
+
+li#style_switcher:hover ul {
+	position: absolute;
+	display: block;
+}
+
+li#style_switcher ul {
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+	background-color: #F1F440;
+	width: 150px;
+}
+	
+li#style_switcher:hover {
+	background-color: #F1F440;
+}
+
+li#style_switcher a:hover {
+	background-color: #F1F440;
+	border: 1px solid #000000;
+}
+/****************************************** CONTAINERS *******************************************/
+#container {
+	margin: 1em auto;
+	padding: 2px;
+	width: 900px;
+	border: 2px solid black;
+}
+
+#images, #contact {
+	padding-bottom: 10px;
+}
+
+#images  {
+	max-width: 580px;
+}
+
+#images, #description {
+	float: left;
+}
+
+#contact, #amenities {
+	float: right;	
+}
+
+#content_top {
+	margin: 10px;
+}
+
+#content_bottom  {
+	margin: 10px;
+}
+/****************************************** SUBHEADER *******************************************/
+#subheader table {
+	border: solid thin black;
+	width: 100%; /* table width is 100% of subheader div */
+	background-color: #dddddd;
+}
+
+#subheader table td {
+	width: 50%; /* each table cell is 50% of table width */
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/****************************************** IMAGES *******************************************/
+#gallery {
+	margin: 20px 10px 10px 10px;
+}
+
+#gallery img {
+	border: 1px solid #ffffff;
+	width: 150px; 
+	height: 120px;
+	padding: 2px;
+}
+
+#gallery figure {
+	display: inline;
+}
+
+#gallery img:hover {
+	border: 1px solid blue;
+}
+
+#gallery figure figcaption {
+	display: none;
+}
+#gallery p {
+	padding: 7px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/****************************************** CONTACT *******************************************/
+#realtor_info, #listing_address {
+	padding: 10px;
+	max-width: 280px;
+	background-color: #ffffff;
+	font-size: 0.8em;
+}
+
+#realtor_info p, img, #listing_address p {
+	padding: 5px 0;
+}
+
+#realtor_info .contact {
+	font-weight: bold;
+}
+
+#realtor_info h2, #listing_address h2 {
+	background-color: #DEBF10;
+	font-size: 20px;
+}
+
+#listing_address {
+	margin-top: 10px;
+}
+
+#map iframe {
+	width: 280px;
+	height: 400px;
+	border: 1px solid black;
+}
+/****************************************** DESCRIPTION *******************************************/
+#description {
+	width: 560px;
+}
+
+#listing_description {
+	margin: 10px;
+	font-size: 0.9em;
+}
+
+#listing_description h2 {
+	background-color: #DEBF10;
+	font-size: 20px;
+}
+
+#listing_description p {
+	padding: 7px 0;
+	line-height: 1.3em;
+}
+
+#listing_description .emphasis {
+	font-weight: bold;
+	font-style: italic;
+}
+/****************************************** AMENITIES *******************************************/
+#amenities {
+	width: 300px;
+}
+
+#listing_amenities {
+	font-size: 0.8em;
+	margin: 10px;
+}
+
+#listing_amenities h2 {
+	background-color: #DEBF10;
+	font-size: 20px;
+}
+
+#listing_amenities td {
+	padding: 7px 0 7px 15px;
+}
+
+#listing_amenities .row_header {
+	padding: 7px 0;
+	font-weight: bold;
+}
+
+#listing_amenities table {
+	margin-bottom: 20px;
+}
+/***************************************** DISCLAIMER *******************************************/
+#disclaimer {
+	background-color: #dddddd;
+	border-top: 1px dotted black;
+}
+
+#disclaimer p {
+	padding: 5px 20px;
+	font-size: 0.7em;
+	text-align: center;
+}
+/****************************************** FOOTER ******************************************/
+footer {
+	clear: both;
+	padding: 10px 0;
+	background-color: #DEBF10;
+	text-align: center;
+}
+
+footer p{
+	padding: 10px 0;
+}
+
+footer a {
+	margin: 0 20px;
+}
+
+.clear_content_foot {
+	clear: both;
+}
+
+
+
+/***************************************************************************/
+/******************************* MEDIA QUERY *******************************/
+/***************************************************************************/
+
+@media only screen and (max-width: 480px) {
+	h1 {
+		font-size: 1.2em;
+	}
+	
+	h2 {
+		font-size: 0.9em;
+	}
+
+	#container, #content_top, #content_bottom , #subheader{
+		width: 440px;
+		border: none;
+	}
+
+	li a, li#style_switcher a, li#style_switcher {
+		font-size: 0.8em;
+	}
+	
+	nav > ul > li {
+	margin: 0 15px;
+	width: 135px;
+	}
+	
+	ul li {
+		display: inline-block;
+	}
+	
+	li#style_switcher:hover ul  {
+		width: 135px;
+	}
+
+	#listing_description, #listing_amenities, #realtor_info, #listing_address {
+		padding: 0;
+		max-width: 420px;
+	}
+
+	#contact, #description, #amenities, #disclaimer {
+		float: none;
+		width: 440px;
+		padding: 0;
+	}
+	
+	#images {
+		float: none;
+		width: 420px;
+	}
+
+	#listing_description , #listing_amenities {
+		margin: 0;
+	}
+
+	#disclaimer {
+		font-size: 1.2em;
+	}
+}

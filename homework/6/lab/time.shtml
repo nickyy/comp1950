@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Playing with SSI</title>
+	</head>
+<body>
+	<main>
+		<h1>Some time stuff</h1>
+		<!--#config timefmt="%b %d, %Y at %I:%M %p"-->
+		<h2>DATE_LOCAL: <!--#echo var="DATE_LOCAL"--></h2>
+		<h2>DATE_GMT: <!--#echo var="DATE_GMT"--></h2>
+		<h2>LAST_MODIFIED: <!--#echo var="LAST_MODIFIED"--></h2>
+	</main>
+
+	<!--#include file="time.inc"-->
+</body>
+</html>

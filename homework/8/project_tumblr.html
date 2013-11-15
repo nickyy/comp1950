@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+  <!-- cross platform device compatibility -->
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;user-scalable=0;">
+  <meta charset="utf-8"> <!--special chars like copyright -->
+  <title>WebBusters - Sample Site</title>
+  <meta name="description" 
+        content="We provide web solutions, website maintenance and web design and development.
+                 Contact us, we are located in Burnaby, BC, Canada."
+  >
+    <meta name="image:Header" content=""/>
+    <link rel="stylesheet" type="text/css" href="http://teams.thenet.ca/webbusters/css/proto.css" media="screen">
+    <style type="text/css" media="screen">
+    
+	/*** Tumblr / Blog page ***/	
+	#main h2 a:link, #main h2 a:visited {
+        color: #eaeaea;
+    }
+	
+	.post-content {
+		padding-top: 10px;
+	}
+	
+	.date {
+		text-align: right;
+	}
+	
+	.post-type-photo, .pagination {
+		text-align: center;
+	}
+	
+	.post-meta {
+		border-bottom: 1px solid #1A305C;
+		margin-bottom: 10px;
+        padding-bottom: 5px;
+	}
+	
+	.post-type-quote {
+		margin-left: 20px;
+	}
+        
+	</style>
+  
+</head>
+<body>
+  <div id=container>
+    <header>
+      <!-- Google Search -->
+      <section id="search">
+        <form method="get" action="http://www.google.com/search"> 
+			<input type="text" name="q" value="">
+			<input type="hidden" name="sitesearch" value="www.thenet.ca">
+			<input type="submit" value="Search" id="search_button">
+		</form>
+       </section>
+       <!-- Google Search -->
+       
+       <a href="http://bcit.ca" target="_blank"><img class="logo" src="{image:Header}" alt="{Title}" /></a>
+      <!--<hgroup id="prototitle"> -->
+        <h1>BCIT COMP 1950</h1>
+        <h2>Intermediate Web Design & Development</h2>
+      <!--</hgroup> -->
+    </header>
+    <nav class="mainnav">
+      <ul>
+        <li><a href="http://teams.thenet.ca/webbusters/protosite.shtml">COMP1950 Home</a></li>
+        <li><a href="http://bcitwebbusters.tumblr.com/outline.html">Course Outline</a></li>
+        <li class="active"><a href="bcitwebbusters.tumblr.com/">Blog</a></li>
+      </ul>
+    </nav>
+    <section id="content">
+      <aside class="sidenav">
+        <nav>
+          <ul>
+            <li><a href="#">Introduction</a></li>
+            <li><a href="#">Tools and Standards</a></li>
+            <li class="active"><a href="http://teams.thenet.ca/webbusters/week3.shtml">HTML5 and SEO</a></li>
+            <li><a href="#">CSS Concepts</a></li>
+            <li><a href="#">Advanced CSS</a></li>
+            <li><a href="#">SSI</a></li>
+            <li><a href="#">Template Development</a></li>
+            <li><a href="#">Midterm</a></li>
+            <li><a href="#">Methodology</a></li>
+            <li><a href="#">Behavior</a></li>
+            <li><a href="#">Site Construction</a></li>
+            <li><a href="#">Final Exam</a></li>
+          </ul>
+        </nav>
+      </aside><!--sidenav -->
+		<section id="main">
+			{block:Posts}
+				<div id="post-{PostID}" class="post {block:Text}post-type-text{/block:Text}{block:Photo}post-type-photo{/block:Photo}{block:Photoset}post-type-photoset{/block:Photoset}{block:Quote}post-type-quote{/block:Quote}{block:Link}post-type-link{/block:Link}{block:Chat}post-type-chat{/block:Chat}{block:Video}post-type-video{/block:Video}{block:Audio}post-type-audio{/block:Audio}">
+						<div class="post-type">
+						</div><!-- .type -->
+					<div class="post-content">
+					{block:Text}
+						{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+						{Body}
+					{/block:Text}
+					{block:Photo}
+						{LinkOpenTag}<img src="{PhotoURL-500}" class="photo" alt="{PhotoAlt}" />{LinkCloseTag}
+						{block:HighRes}<a href="{PhotoURL-HighRes}" class="high-res" target="_blank"></a>{/block:HighRes}
+						{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+					{/block:Photo}
+					{block:Photoset}
+						{Photoset-500}
+						{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+					{/block:Photoset}
+					{block:Quote}
+						<div class="quote-content">"{Quote}"</div>
+						{block:Source}<p class="quote-source">&mdash; {Source}</p>{/block:Source}
+					{/block:Quote}
+					{block:Link}
+						<div class="link-wrap"><h2><a href="{URL}" {Target}>{Name}</a></h2></div>
+						{block:Description}<div class="description">{Description}</div>{/block:Description}
+					{/block:Link}
+					{block:Chat}
+						{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+						<ul class="chat-wrap">
+						{block:Lines}
+							<li class="{Alt} user_{UserNumber}">
+								{block:Label}<span class="label">{Label}</span>{/block:Label}
+								{Line}
+							</li>
+						{/block:Lines}
+						</ul>
+					{/block:Chat}
+					{block:Audio}
+						<div class="audio-wrap">{AudioPlayerGrey}</div>
+						{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+					{/block:Audio}
+					{block:Video}
+						<div class="video-wrap">{Video-500}</div>
+						{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+					{/block:Video}
+					{block:HasTags}
+						<div class="tags">
+							Tags: {block:Tags}<a href="{TagURL}" class="single-tag">{Tag}</a> {/block:Tags}
+						</div>
+					{/block:HasTags}
+					</div><!-- post-content -->
+					<div class="post-meta">
+					{block:Date}
+						<div class="date">
+							<a href="{Permalink}">{Month} {DayOfMonthWithZero}, {Year}</a>
+						</div><!-- .date -->
+					{/block:Date}
+					{block:IfDisqusShortname}
+						<div class="comments">
+							<a href="{Permalink}#disqus_thread">0 comments</a>
+						</div>
+					{/block:IfDisqusShortname}
+					{block:NoteCount}
+						<div class="note-count">
+							<a href="{Permalink}#notes">{NoteCountWithLabel}</a>
+						</div><!-- .note-count -->
+					{/block:NoteCount}
+					</div><!-- .post-meta -->
+				</div><!-- .post -->
+			{block:PermalinkPage}
+				<div class="post-footer">
+					<div class="author">Posted by <a href="{PostAuthorURL}">{PostAuthorName}</a></div>
+					<div class="shorturl"><a href="{ShortURL}">&infin; Short URL</a></div>
+				</div>
+			{/block:PermalinkPage}
+				{/block:Permalink}
+				{block:PostNotes}<div id="post-notes">{PostNotes}</div>{/block:PostNotes}
+			{/block:Posts}
+			{block:Pagination}
+				<div class="pagination">
+					<span class="archive"><a href="/archive">Archive</a></span>
+					<span class="random"><a href="/random">Random</a></span>
+					{block:NextPage}<span class="next-page"><a href="{NextPage}">Next Page</a></span>{/block:NextPage}
+					<span class="page-number">Page {CurrentPage} of {TotalPages}</span>
+					{block:PreviousPage}<span class="previous-page"><a href="{PreviousPage}">Previous Page</a></span>{/block:PreviousPage}
+				</div><!-- .pagination -->
+			{/block:Pagination}
+		</section><!--main-->
+	</section><!--content-->
+	
+    <footer id="mainfooter">
+      <nav class="footernav">
+	  COMP 1950 Project Designed by <a href="http://teams.thenet.ca/webbusters/index.shtml"><strong><em>WebBusters</em></strong></a> 2013 Copyright &copy; All Rights Reserved.
+        <ul>
+          <li><a href="http://teams.thenet.ca/webbusters/sitemap.shtml">[Site Map]</a></li>
+          <li><a href="http://validator.w3.org/check?uri=referer">[Validate HTML]</a></li>
+          <li><a href="http://jigsaw.w3.org/css-validator/check/referer">[Validate CSS]</a></li>
+        </ul>
+      </nav>    
+    </footer>
+  </div><!--container-->
+</body>
+</html>
